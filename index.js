@@ -4,7 +4,6 @@ const mailnput = document.querySelector("#email");
 const msg = document.querySelector(".msg");
 const userList = document.querySelector("#users");
 
-myForm.addEventListener('submit', onSubmit);
 
 function onSubmit(e) {
     e.preventDefault();
@@ -15,7 +14,7 @@ function onSubmit(e) {
    else{
        msg.innerHTML = "Invalid Input Fields"
 
-       //setTimeout(()=> msg.remove(), 10000);
+       setTimeout(()=> msg.remove(), 10000);
    }
     //Clear fields
     nameInput.value ='';

@@ -76,35 +76,19 @@
 
 #funds{
     background: darkblue;
-    height: 50px;
+    height: 40px;
     font-size: 15px;
+    text-align: center;
     top: 0;
     position: flex;
 }
-.div-buy {
-    float: left;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-.div-buy a button{
-    background: rgba(0, 255, 0, 0.479);
-    width: 70px;
-    height: 30px;
-    border: 2px solid white;
-    border-radius: 10px;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-#buy button:hover{
-    color: lime;
-}
+
 .div-bal{
+    float: left;
     text-align: center;
-    padding-top: 3px;
-    padding-left: 1px;
-    padding-right: 60px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 110px;
 }
 .div-bal a{
     font-family: arial;
@@ -114,20 +98,22 @@
     font-weight: bold;
 }
 .div-sell{
+    padding-top: 9px;
     font-weight: bold;
-    float: right;
-    padding-right: 25px;
+    text-align: center;
+    padding-right: 3px;
 }
-.div-sell a button{
-    background: rgba(0, 255, 0, 0.479);
-    width: 70px;
-    height: 30px;
-    border: 2px solid white;
-    border-radius: 10px;
+#sell-btn{
+    background: blue;
+    width: 90px;
+    height: 23px;
+    border: none;
+    border-radius: 5px;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+   
 }
 #sell button:hover{
     color: lime;
@@ -240,7 +226,6 @@
     border-radius: 50px;
     border: 1px solid white;
 }
-}
 .btc-btn{
     background: yellow;
     width: 50px;
@@ -315,3 +300,41 @@
     width: 50px;
     height: 20px;
 }
+
+@media (max-width:500px){
+    body{
+        font-size: 12px;
+    }
+    #page__name{
+        font-size: 23px;
+    }
+    .menu-btn{
+        width: 50px;
+        height: 19px;
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+    }
+    .div-bal a{
+        float: left;
+        font-family: arial;
+        text-decoration: none;
+        color: white;
+        padding-left: 5px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+  
+    #sell-btn{
+        background: blue;
+        width: 50px;
+        height: 19px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-family: sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
