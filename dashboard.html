@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body id="body-bg">
+   <!--Navbar Section-->
+   <nav class="navbar">
+       <div class="nav__conts">
+           <h1 id="page__name"> <strong>Trad</strong>com</h1>
+        <div class="dropdown">
+            <button onclick="dropShow()" class="menu-btn">MENU</button>
+            <div id="menuDrops" class="menu-contents">
+                <a href="#">Profile</a>
+                <a href="#">History</a>
+                <a href="#">Deposit</a>
+                <a href="#">Contacts</a>
+            </div>
+        </div>
+        </div>
+   </nav>
+
+    <div id="funds">
+        <div class="div-buy">
+            <a href="#"id="buy"><button>Buy</button></a>
+        </div>
+        <div class="div-bal">
+            <a href="#" id="bal">Bal: $345,300.450</a>
+        </div>
+        <div class="div-sell">
+            <a href="#" id="sell"> <button>Send</button></a>
+        </div>
+    </div>
+    <div class="main-section">
+        <div class="crypts">
+            <div class="crypt-head"> Tokens</div>
+            <ul class="ul-sect">
+                <img id="imgs" src="images/btc.png"/>
+                <button class="tknval"><br> Bitcoin <br> <em>$41,102.80</em></button>
+                <li class="token-li">15BTC</li>
+                <hr>
+                <br>
+                <img id="imgs" src="images/images.jpg">
+                <button class="tknval"><br> Ethereum <br> <em>$58,102.80</em></button>
+                <li class="token-li">23ETH</li>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <img id="imgs" src="images/download (3).png"/>
+                <button class="tknval"><br> BNB <br> <em>$12,102.80</em></button>
+                <li class="token-li">14BNB</li>
+                <hr>
+                <br>
+                <img id="imgs-tron" src="images/download.png">
+                <button class="tknval"><br> Tron <br> <em>$5,102.80</em></button>
+                <li class="token-li">05TRX</li>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <img id="imgs" src="images/Ltc.png"/>
+                <button class="tknval"><br> Litecoin <br> <em>$12,102.80</em></button>
+                <li class="token-li">5LTC</li>
+                <hr>
+                <br>
+                <img id="imgs-tron" src="images/download (4).png">
+                <button class="tknval"><br> Ada <br> <em>$4,102.80</em></button>
+                <li class="token-li">23ADA</li>
+                <br>
+                <br>
+                <hr>
+                <br>
+                
+            </ul> 
+            <br>
+            <br>
+        </div>
+        <div class="nft-div">
+            <div class="nft-head">NFTs</div>
+                <div class="image-div">
+                    <img id="monkey" src="nft-image/2349037126561_status_ece7bccd0451483a88f9b8d5715ee542.jpg"> Mickey Mouse
+                </div>
+                <br>
+                <div class="descri">
+                Collectibles will appear here once you buy a non fundible token
+                </div>
+                <br>
+                <div class="nft-recy">
+                    <button class="recy-btn">
+                        RECIEVE
+                    </button>
+                </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="div-fks">
+           <div class="footer-links">
+                <button>
+                <a id="walle" href="#">WALLET<a>
+                </button>
+                <button onclick="logOut()">
+                <a id="walle" href="#">LOG OUT</a>
+                </button>
+                   
+                <div class="bags-color">
+                    <button id="dark" onclick="darkShow()">
+                    Dark</button> <br>
+                    <button id="light" onclick="lightShow()">
+                    Light</button>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <script type="text/javascript" src="index.js">
+    </script>
+</body>
+</html>
