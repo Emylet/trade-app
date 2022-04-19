@@ -2,7 +2,7 @@ function myChanger() {
     var user = document.forms["myForm"]["Uname"].value;
     var pwd = document.forms["myForm"]["Pass"].value;
     let info = document.getElementById("show")
-    if(user=="mekus"|| user=="jason" && pwd=="1914"|| pwd=="5050")
+    if(user=="mekus" && pwd=="1914" || user=="jason" && pwd=="5050")
     {
         window.location.href="dashboard.html";
     }
