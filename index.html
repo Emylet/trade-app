@@ -5,30 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tradx-com</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-<h1>
-<strong>Trad</strong>com
-</h1>
-    <div class="divHead">
-        <form name="myForm" method="post">
-            <label>User Name</label>
-            <input type="text" name="Uname" class="inpuText" placeholder="UserName">
-            <br><br>
-            <label>Password  </label>
-            <input type="password" name="Pass" class="inpuText" placeholder="Password">
-            <br><br>
-            <input type="button" name="log"
-            id="logButton" value="Login" onclick="myChanger()">
-            <input type="button" name="log"
-            id="signButton" value="SignUp" onclick="myOwn()">
-            <br><br>
-            <p id="show"></p>
-            <p><a href="#">Forgot Password</a> </p>
-            <br>
-        </form>
-    </div>
-<script src="index.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: rgba(0, 0, 0, 0.842);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            text-align: center;
+            padding-top: 40px;
+            color: darkblue;
+        }
+        h1{
+            color: white;
+            font-family: times;
+        }
+        h1 strong{
+            color: yellow;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li {
+            padding: 5px;
+            background: #f4f4f4;
+            margin: 5px 0;
+        }
+        .container {
+            margin: auto;
+            width: 500px;
+            overflow: auto;
+            padding: 3rem 2rem;
+        }
+        .input-txt{
+            font-weight: bold;
+            color: darkblue;
+        }
+        #my-form{
+            padding: 2rem;
+            background: lightskyblue;
+        }
+ 
+        #my-form label{
+            display: block;
+        }
+ 
+        #my-form input[type='text'] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .btn{
+            width: 30%;
+            padding: 10px 15px;
+            border: 0;
+            background: #333;
+            color: #fff;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .msg{
+            color: red;
+            font-weight: bold;
+        }
+ 
+     </style>
+ </head>
+ <h1>Trade<strong>com</strong></h1>
+ <section class="container">
+ <form id="my-form">
+    
+     
+     <div>
+         <label class="input-txt" for="name">Username:</label>
+         <input type="text" id="name">
+     </div>
+     <div>
+         <label class="input-txt" for="email">Password:</label>
+         <input type="text" id="email">
+     </div>
+     <input class="btn" type="submit" value="Login">
+     <input class="btn" id="signUp" type="button" value="Sign Up" onclick="SignUps()">
+     <br>
+     <br>
+     <div class="msg"></div>
+     <br>
+     <p><a href="#">Forgot Password</a> </p>
+ </form>
+ 
+ <!--<ul id="users">
+     <li class="item">Item 1</li>
+     <li class="item">Item 2</li>
+     <li class="item">Item 3</li>
+ </ul> -->
+ 
+      
+ 
+ </section>
+ 
+     <script src="index.js">
+ 
+     </script>
+ </body>
 </body>
 </html>

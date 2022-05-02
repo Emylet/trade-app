@@ -1,24 +1,36 @@
-function myChanger() {
-    var user = document.forms["myForm"]["Uname"].value;
-    var pwd = document.forms["myForm"]["Pass"].value;
-    let info = document.getElementById("show")
-    if(user=="mekus" && pwd=="1914" || user=="jason" && pwd=="5050")
-    {
-        window.location.href="dashboard.html";
-    }
-    else if (isNaN(pwd))
-    { 
-        info.innerHTML = "Invalid Passcode"
-    }
-    else {
-        info.innerHTML="Enter UserName and Password"
-    }
-}
+const myForm = document.querySelector("#my-form");
+const nameInput = document.querySelector("#name");
+const mailnput = document.querySelector("#email");
+const msg = document.querySelector(".msg");
+const userList = document.querySelector("#users");
 
-function myOwn(){
-    show.innerHTML =
-     "Hope you are not a Yahoo boy!"
-}
+myForm.addEventListener('submit', onSubmit);
+
+function onSubmit(e) {
+    e.preventDefault();
+
+    if(nameInput.value ==="mekus" && mailnput.value === "1914" || nameInput.value === "jason" && mailnput.value === "5050") {
+        window.location.href="file:///C:/Users/JASON/Documents/Trade-com/dashboard.html"
+   }
+   else{
+       msg.innerHTML = "Invalid Input Fields"
+
+       //setTimeout(()=> msg.remove(), 10000);
+   }
+    //Clear fields
+    nameInput.value ='';
+    mailnput.value = '';
+    }
+
+    function SignUps(){
+        msg.innerHTML = "Hope you'll adhere to our terms"
+    }
+
+    /*
+     const li = document.createElement('li');
+       li.appendChild(document.createTextNode(`${nameInput.value} : ${mailnput.value}`));
+
+       userList.appendChild(li);*/
 
 function dropShow() {
     document.getElementById("menuDrops").classList.toggle
