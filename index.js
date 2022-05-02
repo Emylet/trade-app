@@ -10,7 +10,7 @@ function onSubmit(e) {
     e.preventDefault();
 
     if(nameInput.value ==="mekus" && mailnput.value === "1914" || nameInput.value === "jason" && mailnput.value === "5050") {
-        window.location.href="file:///C:/Users/JASON/Documents/Trade-com/dashboard.html"
+        window.location.href="dashboard.html"
    }
    else{
        msg.innerHTML = "Invalid Input Fields"
