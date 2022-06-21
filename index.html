@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tradx-com</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#div-pwd").delay(1000).fadeIn();
+            $('#next').click(function(e){
+                $('#container').show()
+                $('#div-pwd').fadeOut();
+                
+            });
+        });
+    </script>
     <style>
         *{
             margin: 0;
@@ -34,10 +45,12 @@
             background: #f4f4f4;
             margin: 5px 0;
         }
-        .container {
+        #container {
+            display: none;
             margin: auto;
             width: 500px;
             overflow: auto;
+            background: lightskyblue;
             padding: 3rem 2rem;
         }
         .input-txt{
@@ -46,7 +59,7 @@
         }
         #my-form{
             padding: 2rem;
-            background: lightskyblue;
+            
         }
  
         #my-form label{
@@ -73,6 +86,57 @@
             color: red;
             font-weight: bold;
         }
+        #div-pwd{
+            margin: auto;
+            width: 500px;
+            overflow: auto;
+            justify-content: center;
+            padding: 3rem 2rem;
+            text-align: center;
+            background: black;
+        }
+        .copy-sec{
+            padding: 9px;
+            font-size: 20px;
+            color: whitesmoke;
+        }
+        .form-sec{
+            display: flex;
+            padding: 14px;
+            margin: 7px;
+            text-align: center;
+            justify-content: center;
+        }
+        .userN, .coupon{
+            width: 250px;
+            height: 28px;
+            margin: 10px;
+            padding-left: 10px;
+        }
+      
+        #copy{
+            background: rgb(0, 13, 128);
+            color: whitesmoke;
+            width: 70px;
+            height: 20px;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+        }
+        .saveInfo{
+            font-size: 15px;
+            color: whitesmoke;
+        }
+        #next{
+            background: none;
+            border:  2px solid whitesmoke;
+            border-radius: 5px;
+            width: 70px;
+            font-weight: bold;
+            color: yellow;
+            margin: 20px;
+        }
         @media (max-width:500px){
             body{
             background: rgba(0, 0, 0, 0.842);
@@ -83,16 +147,35 @@
             padding-top: 30px;
             color: darkblue;
         }
-            .container {
+        #div-pwd{
+            margin: auto;
+            width:  330px;
+            overflow: auto;
+            height: 50%;
+            justify-content: center;
+            padding: 3rem 2rem;
+            text-align: center;
+            background: black;
+        }
+        .copy-sec{
+            padding: 9px;
+            font-size: 18px;
+            color: whitesmoke;
+        }
+        .saveInfo{
+            font-size: 14px;
+            color: whitesmoke;
+        }
+            #container {
             margin: auto;
             width: 370px;
             height: 80%;
             overflow: auto;
+            background: lightskyblue;
             padding: 3rem 2rem;
         } 
         #my-form{
             padding: 2rem;
-            background: lightskyblue;
             height: 400px;
         }
         #my-form input[type='text'] {
@@ -103,12 +186,13 @@
             border: 1px solid #ccc;
         }
         .btn{
-            width: 80px;
-            height: 30px;
+            width: 75px;
+            height: 27px;
             border: 0;
             padding-top: 6px;
             background: #333;
             color: #fff;
+            font-size: 13px;
             font-weight: bold;
             font-family: arial;
             border-radius: 5px;
@@ -117,17 +201,17 @@
  
      </style>
  </head>
+ <main>
  <h1>Trade<strong>com</strong></h1>
- <section class="container">
+ <section id="container">
  <form id="my-form">
     
-     
      <div>
-         <label class="input-txt" for="name">Username:</label>
+         <label class="input-txt" for="name">Username</label>
          <input type="text" id="name">
      </div>
      <div>
-         <label class="input-txt" for="email">Password:</label>
+         <label class="input-txt" for="email">Password</label>
          <input type="text" id="email">
      </div>
      <input class="btn" type="button" value="Login" onclick="logIn()">
@@ -137,19 +221,85 @@
      <div class="msg"></div>
      <br>
      <p><a href="#">Forgot Password</a> </p>
- </form>
- 
- <!--<ul id="users">
-     <li class="item">Item 1</li>
-     <li class="item">Item 2</li>
-     <li class="item">Item 3</li>
- </ul> -->
- 
-      
- 
+ </form> 
  </section>
+<div id="div-pwd">
+    <div class="copy-sec">
+        Generate User ID
+        <form class="for-sec">
+            <div>
+                
+                <input type="text" id="name" placeholder="Username" class="userN">
+            </div>
+            
+            <div>
+            
+                <input type="text" id="email" placeholder="Password" class="coupon">
+            </div>
+            <button id="copy">Copy</button>
+        </form>
+        <p class="saveInfo">Remember to save this Password</p>
+        <button id="next">NEXT</button>
+    </div>
+</div>
+</main>
  
-     <script src="index.js">
+     <script>
+         var copybtn = document.getElementById("copy");
+         var userN = document.querySelector(".userN");
+         var coupon = document.querySelector(".coupon");
+
+
+
+         const  copytxt = (e) =>{
+             e.preventDefault();
+             coupon.select();
+             coupon.setSelectionRange(0, 999999);
+             document.execCommand("copy");
+             copybtn.textContent = "Copied";
+             setTimeout(() =>{
+                 copybtn.textContent = "Copy";
+                
+                
+             },3000);
+         };
+         copybtn.addEventListener("click", copytxt);
+
+
+
+         const myForm = document.querySelector("#my-form");
+         const nameInput = document.querySelector("#name");
+         const mailnput = document.querySelector("#email");
+         const msg = document.querySelector(".msg");
+         const userList = document.querySelector("#users");
+        
+
+
+         function logIn(){
+
+            if (mailnput.value === "" || nameInput === "") {
+                msg.innerHTML = "Enter Username and Password!"
+            
+
+            }
+             else if(nameInput.value === userN.value && mailnput.value === coupon.value ) {
+                window.location.href="dashboard.html"
+                
+            }
+            else{
+               msg.innerHTML = "Invalid Input Fields"
+            
+               
+            }
+            //Clear fields
+            nameInput.value ='';
+            mailnput.value = '';
+            coupon.value = '';
+            }
+            
+            function SignUps(){
+                msg.innerHTML = "Visit Our official site to sign Up " 
+            }
  
      </script>
  </body>

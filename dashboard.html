@@ -12,7 +12,10 @@
    <nav class="navbar">
        <div class="nav__conts">
            <h1 id="page__name"> <strong>Trad</strong>com</h1>
+           
+           <span id="id-sec"> </span>
         <div class="dropdown">
+            
             <button onclick="dropShow()" class="menu-btn">MENU</button>
             <div id="menuDrops" class="menu-contents">
                 <a href="#">Profile</a>
@@ -32,6 +35,7 @@
                     <a href="#"> <button id="sell-btn">Send</button></a>
                     <a href="#"> <button id="sell-btn">Receive</button></a>
                 </ul>
+                
         </div>
     </div>
     <div class="main-section">
@@ -98,17 +102,13 @@
     </div>
     <div class="footer">
         <div class="div-fks">
-           <div class="footer-links">
-                <button>
-                <a id="walle" href="#">WALLET<a>
-                </button>
-                <button onclick="logOut()">
-                <a id="walle" href="#">LOG OUT</a>
-                </button>
+           <div class="footer-links">            
+                <a href="#" id="walle" onclick="logOut()">LOG OUT</a>
+                <a href="#" id="walle">WALLET<a>
                    
                 <div class="bags-color">
                     <button id="dark" onclick="darkShow()">
-                    Dark</button> <br>
+                    Dark</button>
                     <button id="light" onclick="lightShow()">
                     Light</button>
                 </div>
