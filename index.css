@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgba(0, 0, 0, 0.842);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    padding-top: 40px;
+    color: darkblue;
+}
+h1{
+    color: rgb(226, 17, 226);
+    font-size: 34px;
+    
+}
+h1 strong{
+    color: blue;
+    font-family: times;
+}
+ul{
+    list-style: none;
+}
+ul li {
+    padding: 5px;
+    background: #f4f4f4;
+    margin: 5px 0;
+}
+#container {
+    display: none;
+    margin: auto;
+    width: 600px;
+    border-radius: 5px;
+    overflow: auto;
+    background: lightskyblue;
+    padding: 3rem 2rem;
+}
+.input-txt{
+    font-weight: bold;
+    color: darkblue;
+}
+#my-form{
+    padding: 2rem;
+    
+}
+
+#my-form label{
+    display: block;
+}
+
+#my-form input[type='text'] {
+    width: 60%;
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid blue;
+}
+.pswd-btn{
+    width: 60%;
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid blue;
+}
+.btnlog-div{
+    padding-top: 5px;
+}
+.btn{
+    width: 20%;
+    padding: 10px 15px;
+    border: 0;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.btn-fgs{
+    background: none;
+    border:  2px solid whitesmoke;
+    border-radius: 5px;
+    width: 70px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 2px;
+}
+.msg{
+    color: purple;
+    font-weight: bold;
+    font-size: 13px;
+}
+#div-pwd{
+    margin: auto;
+    width: 500px;
+    overflow: auto;
+    justify-content: center;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: black;
+}
+.copy-sec{
+    padding: 9px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.form-sec{
+    display: flex;
+    padding: 14px;
+    margin: 7px;
+    text-align: center;
+    justify-content: center;
+}
+.userN, .coupon{
+    width: 250px;
+    height: 28px;
+    text-align: center;
+    margin: 10px;
+}
+.mail-class{
+    width: 250px;
+    height: 28px;
+    text-align: center;
+    margin: 10px;
+}
+
+#copy{
+    background: rgb(0, 13, 128);
+    color: whitesmoke;
+    width: 70px;
+    height: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+.saveInfo{
+    font-size: 15px;
+    color: whitesmoke;
+}
+#next{
+    background: none;
+    border:  2px solid whitesmoke;
+    border-radius: 5px;
+    width: 70px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 20px;
+}
+#reset-div{
+    display: none;
+    margin: auto;
+    width: 700px;
+    border-radius: 10px;
+    justify-content: center;
+    color: blanchedalmond;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: black;
+}
+.cont-reset{
+    margin: 10px;
+}
+#reset-section{
+    margin: 20px;
+}
+@media (max-width:500px){
+    body{
+    background: rgba(0, 0, 0, 0.842);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    height: 100%;
+    text-align: center;
+    padding-top: 30px;
+    color: darkblue;
+}
+#div-pwd{
+    margin: auto;
+    width:  330px;
+    overflow: auto;
+    height: 50%;
+    justify-content: center;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: black;
+}
+.userN, .coupon{
+    width: 200px;
+    height: 28px;
+    text-align: center;
+    margin: 10px;
+}
+.mail-class{
+    width: 200px;
+    height: 28px;
+    text-align: center;
+    margin: 10px;
+}
+.copy-sec{
+    padding: 9px;
+    font-size: 18px;
+    color: whitesmoke;
+}
+.saveInfo{
+    font-size: 14px;
+    color: whitesmoke;
+}
+ #container {
+    margin: auto;
+    width: 340px;
+    height: 80%;
+    border-radius: 10px;
+    overflow: auto;
+    background: lightskyblue;
+    padding: 3rem 2rem;
+} 
+#my-form{
+    padding: 2rem;
+    height: 400px;
+}
+#my-form input[type='text'] {
+    width: 90%;
+    height: 30px;
+    padding: 8px;
+    font-size: 13px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    border: 2px solid blue;
+}
+.pswd-btn{
+    width: 90%;
+    height: 30px;
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid blue;
+}
+.btnlog-div{
+    padding-top: 5px;
+}
+.btn{
+    width: 65px;
+    height: 27px;
+    border: 0;
+    padding-top: 6px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: arial;
+    border-radius: 5px;
+}
+.btn-fgs{
+    background: none;
+    border:  2px solid whitesmoke;
+    border-radius: 5px;
+    width: 70px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 2px;
+}
+.terms-div{
+    font-size: 12px;
+    padding: 5px;
+}
+.tms{
+    margin: 5px;
+}
+
+#reset-div{
+    margin: auto;
+    width:  330px;
+    overflow: auto;
+    height: 60%;
+    justify-content: center;
+    padding: 3rem 2rem;
+    text-align: center;
+    background: black;
+}
+
+.cont-reset{
+    margin: 10px;
+}
+#reset-section{
+    margin: 20px;
+}

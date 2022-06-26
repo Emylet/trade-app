@@ -9,6 +9,9 @@
        
 
 
+//var ndsa = window.prompt("enter UserName");
+//var menuInfo =document.getElementById("menuInfo");
+//menuInfo.innerHTML= " Welcome "+ ndsa;
 
 
 
@@ -38,18 +41,11 @@ window.onclick = function(event) {
 
 function darkShow() {
     document.getElementById("body-bg").style.backgroundColor='black'; 
-    var x = document.getElementsByClassName();
-        for (var i = 0; i < x.length; x++)
-        {
-            x[i].style.color = "white";
-        }
-    
+    document.querySelector(".main").style.color= 'white';  
 }
 function lightShow(){
-    document.getElementById("body-bg").style.backgroundColor='white'
-        if(document.getElementsByClassName("tknval").textContent ==''){
-        document.getElementsByClassName("tknval").style.display = 'blue';
-        }
+    document.getElementById("body-bg").style.backgroundColor='white';
+    document.querySelector(".main").style.color= 'darkblue';
 }
 
 function logOut() {

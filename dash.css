@@ -7,325 +7,166 @@
 }
 
 .navbar{
-    background: purple;
-    height: 50px;
+    background: lightskyblue;
+    padding: 7px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-.nav__conts{
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 auto;
 }
 #page__name strong{
-    color: white;
-    font-family: times;
+    color: purple;
+    
 }
 #page__name{
-    padding-top: 22px;
+    color: blue;
+    font-family: times;
     padding-left: 20px;
-    color: yellow;
 }
-.menu-btn{
-    background: #297fb928;
-    color: white;
-    padding: 6px;
-    font-size: 16px;
-    border: 1px solid white;
-    width: 80px;
-    cursor: pointer;
-}
-span{
-    text-align: center;
-    color: whitesmoke;
-    padding-top: 28px;
-}
-.menu-btn:hover, .menu-btn:focus{
-    background: #2980b9;
-}
-.dropdown{
-    padding-right: 29px;
-    position: relative;
-    display: inline-block;
-    padding-top: 22px;
-}
-.menu-contents{
-    display: none;
-    position: absolute;
-    background: #f1f1f1;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px 
-    rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-.menu-contents a {
-    color: darkblue;
-    padding: 9px 11px;
-    text-decoration: none;
-    display: block;
-}
-.menu-contents a:hover
-{background-color: plum;}
-
-.show {display: block;}
-
-#funds{
-    background: darkblue;
-    height: 40px;
-    font-size: 15px;
-    text-align: center;
-    justify-content: center;
-    top: 0;
-    position: flex;
-}
-#bal{
-    padding-top: 10px;
-    float: left;
-    color: whitesmoke;
-}
-.div-bal a{
-    text-decoration: none;
-}
-#sell-btn:hover{
-    background-color: teal;
-}
-
-.div-bal{
-    float: left;
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 110px;
-}
-#sell-btn{
-  width: 70px;
-  margin: 7px;
-  border: 1px solid white;
-  background: none;
-  color: #f1f1f1;
-  outline: none;
-  
-}
-.sell-list{
-    display: flex;
+.user-div{
+    padding-left: 1000px;
+    padding-right: 0;
+    padding-top: 6px;
+    right: 0;
     float: right;
-    padding-top: 2px;
-    padding-left: 300px;
-    text-align: center;
+}
+select{
+    width: 75px;
+    background: lightskyblue;
+    color: darkblue;
+    border: 2px solid purple;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: arial;
+}
+.fund-div{
+    display: flex;
+    background: royalblue;
+    
 }
 .div-bal{
-    text-align: center;
-    justify-content: center;
+    padding-top: 10px;
+    color: white;
+    padding-left: 30px;
+    font-weight: bold;
+}
+.trans-ul{
     display: flex;
+    padding-left: 800px;
+    text-decoration: none;
+    list-style: none;
+    color: whitesmoke;
+    font-weight: bold;
 }
-
-
-#sell button:hover{
-    color: lime;
+a{
+    margin: 10px;
+    color: whitesmoke;
+    text-decoration: none;
 }
-
-/* Crypto section begins here*/
-
-
-.main-section{
+a:hover{
+    color: orangered;
+}
+.nav-btn{
+    background: none;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 5px;
+    width: 70px;
+}
+.nav-btn:hover{
+    color: orangered;
+}
+.main{
+    display: flex;
     height: 100vh;
+    color: darkblue;
 }
-.crypts{
-    border-right: 1px solid blue;
-    overflow-y: scroll;
-    float: left;
-    width: 60%;
-    height: 535px;
-    color: blue
-}
-.crypts::-webkit-scrollbar {
-    display: none;
+.coins-div{
+    flex: 1.5;
+    border-right: 2px solid blue;
 }
 .nft-div{
-    float: right;
-    width: 40%;
-    color: blue;
-    height: 535px;
+    flex: 1;
+    padding-top: 5px;
 }
-.crypt-head{
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
+.crypt-div{
+    padding-left: 6px;
+    
 }
-.nft-head{
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    color: blue;
-}
-.image-div{
-    padding-left: 30px;
-    margin-bottom: 10px;
-}
-.image-div em{
-    margin-top: 50px;
-    padding-left: 20px;
-}
-#monkey{
-    border-radius: 70px;
-}
-.descri{
-    text-align: center;
-}
-.nft-recy{
-    text-align: center;
-    padding: 20px;
-}
-.recy-btn{
-    width: 120px;
-    height: 20px;
-    background: blue;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px paleturquoise;
-    cursor: pointer;
-}
-.recy-btn:hover{
-    color: greenyellow;
-}
-.recy-btn:active{
-    background: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(5px);
-}
-.ul-sect{
+ul{
     list-style: none;
-}
-.token-li{
-    padding-top: 15px;
-    float: right;
-    padding-right: 7px;
-    font-size: 14px;
-    font-weight: bold;
-    justify-content: left;
-}
-.tknval{
-    background: none;
-    color: fuchsia;
-    font-weight: bold;
-    width: 50px;
-    font-size: 15px;
-    border: none;
-    text-align: left;
-    padding-left: 10px;
-    padding-bottom: 50px;
-}
-.tknval em{
-    font-size: 11px;
-    color: yellowgreen;
-}
-#imgs{
-    float: left;
-    border-radius: 50px;
-}
-#imgs-tron{
-    float: left;
-    border-radius: 50px;
-    border: 1px solid white;
-}
-.btc-btn{
-    background: yellow;
-    width: 50px;
-    height: 50px;
-    color: blue;
-    font-weight: bold;
-    border-radius: 60px;
-    border: none;
-}
-.tron-btn{
-    background: rgb(0, 255, 255);
-    width: 50px;
-    height: 50px;
-    color: blue;
-    font-weight: bold;
-    border-radius: 60px;
-    border: none;
+    
 }
 
-/* Crypto Section ends here!*/
+img{
+    background-position: center;
+    padding-top: 5px;
+    border-radius: 50px;
+    margin: 4px;
+}
+span{
+    float: right;
+    padding-right: 4px;
+    padding-top: 29px;
+}
+.coin-name{
+    float: right;
+    padding-right: 580px;
+    padding-top: 21px;
+    font-family: arial;
+}
+.id-div{
+    padding-left: 7px;
+}
 
 .footer{
     background: rgb(0, 3, 5);
     bottom: 0;
     position: fixed;
-    height: 60px;
+    height: 50px;
     width: 100%;
     border-top: 2px solid blue;
 }
-.footer.cnts{
-    background: darkblue;
-    height: 50px;
+
+.footer-links{
     font-size: 15px;
-    top: 0;
-    position: flex;
-}
-.div-fks{
-    padding-top: 12px;
-    padding-left: 12px;
-}
-.footer-links button a{
-    font-size: 15px;
+    padding-top: 5px;
     text-decoration: none;
     font-weight: bold;
 }
-.footer-links button{
-    background: white;
-    width: 100px;
-    height: 30px;
-    border: 2px solid blue;
-    border-radius: 5px;
-}
-.address{
-    padding-left: 60px;
-    color: white;
-}
-.address strong{
-    color: yellow;
-}
+
 #walle{
     color: whitesmoke;
     font-size: 12px;
     font-weight: bold;
     font-family: arial;
-    margin: 10px;
+    margin: 5px;
+    padding-top: 26px;
     text-decoration: none;
 }
-.bags-color{
-    float: right;
-    padding-right: 2px;
+#wallet{
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: arial;
+    margin: 5px;
+    padding-top: 26px;
+    text-decoration: none;
 }
+
 #dark{
     background: black;
     color: white;
     width: 50px;
+    padding-bottom: 5px;
     height: 20px;
+    border-radius: 5px;
+    float: right;
 }
 #light{
     color: black;
     width: 50px;
     height: 20px;
+    float: right;
 }
-.bags-color{
-    padding-top: 8px;
-    padding-right: 8px;
-}
-
 
 @media (max-width:500px){
     body{
@@ -334,72 +175,229 @@ span{
     #page__name{
         font-size: 23px;
     }
-    .menu-btn{
-        width: 50px;
-        height: 19px;
-        font-size: 10px;
-        padding: 0;
-        margin: 0;
-        font-weight: bold;
+    #page__name{
+        color: blue;
+        font-family: times;
+        padding-left: 0;
     }
-    .dropdown{
-        padding-right: 29px;
-        position: relative;
-        display: inline-block;
-        padding-top: 22px;
-    }
-    .menu-contents{
-        display: none;
-        position: absolute;
-        background: #f1f1f1;
-        min-width: 100px;
-        box-shadow: 0px 8px 16px 0px 
-        rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
-    .menu-contents a {
-        color: darkblue;
-        padding: 9px 11px;
-        text-decoration: none;
-        display: block;
-    }
-    .div-bal{
-        text-align: center;
-        justify-content: center;
-        display: flex;
-    }
-    #bal{
-        padding-top: 10px;
-        float: left;
-        color: chartreuse;
-    }
-    .sell-list{
-        display: flex;
-        float: right;
-        padding-left: 40px;
-    }
-    .div-bal a{
-        font-family: arial;
-        text-decoration: none;
-        color: white;
-        padding-left: 5px;
+    .user-div{
+        padding-left: 200px;
+        padding-right: 0;
         padding-top: 9px;
-        font-size: 11px;
-        font-weight: bold;
+        right: 0;
+        float: right;
     }
     
-    #sell-btn{
-        margin: 0;
-        float: right;
-        background: none;
-        width: 40px;
-        height: 19px;
-        border: 1px solid whitesmoke;
-        border-radius: 30px;
-        color: #f1f1f1;
-        font-family: sans-serif;
-        font-size: 8px;
+    select{
+        width: 75px;
+        background: lightskyblue;
+        color: darkblue;
+        border: 2px solid purple;
+        border-radius: 5px;
+        font-size: 12px;
         font-weight: bold;
-        cursor: pointer;
-        outline: none;
+        font-family: arial;
+    }
+    .trans-ul{
+        display: flex;
+        padding-left: 30px;
+        text-decoration: none;
+        list-style: none;
+        color: whitesmoke;
+        font-weight: bold;
+    }
+    .div-bal{
+        padding-top: 8px;
+        color: white;
+        padding-left: 10px;
+        font-weight: bold;
+    }
+    a{
+        margin: 5px;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+    .nav-btn{
+        background: none;
+        border: 2px solid whitesmoke;
+        color: whitesmoke;
+        font-size: 11px;
+        font-weight: bold;
+        border-radius: 5px;
+        width: 55px;
+    }
+    .nav-btn:hover{
+        color: orangered;
+    }
+    img{
+        background-position: center;
+        padding-top: 5px;
+        padding: 7px;
+        margin: 0;
+        border-radius: 100px;
+        border: none;
+        width: 2rem;
+        
+    }
+    span{
+        float: right;
+        padding-right: 8px;
+        padding-top: 10px;
+        font-size: 7px;
+    }
+    .coin-name{
+        float: right;
+        padding-right: 150px;
+        padding-top: 10px;
+        font-size: 7px;
+    }
+
+    #dark{
+        background: black;
+        color: white;
+        width: 50px;
+        padding-bottom: 5px;
+        height: 20px;
+        border-radius: 5px;
+    }
+    #light{
+        color: black;
+        width: 50px;
+        height: 20px;
+    }
+    @media (max-width:406px){
+    
+        .user-div{
+            padding-left: 220px;
+            padding-right: 0;
+            padding-top: 9px;
+            right: 0;
+            float: right;
+        }
+       
+        .coin-name{
+            float: right;
+            padding-right: 150px;
+            padding-top: 10px;
+            font-size: 7px;
+        }
+
+@media (max-width:405px){
+    
+    .user-div{
+        padding-left: 215px;
+        padding-right: 0;
+        padding-top: 9px;
+        right: 0;
+        float: right;
+    }
+   
+    .coin-name{
+        float: right;
+        padding-right: 144px;
+        padding-top: 10px;
+        font-size: 7px;
+    }
+
+    @media (max-width:390px){
+        .user-div{
+            padding-left: 190px;
+            padding-right: 0;
+            padding-top: 9px;
+            right: 0;
+            float: right;
+        }
+        .coin-name{
+            float: right;
+            padding-right: 140px;
+            padding-top: 10px;
+            font-size: 7px;
+        }
+    }
+    @media (max-width:384px){
+        .user-div{
+            padding-left: 180px;
+            padding-right: 0;
+            padding-top: 9px;
+            right: 0;
+            float: right;
+        }
+        .coin-name{
+            float: right;
+            padding-right: 135px;
+            padding-top: 10px;
+            font-size: 8px;
+        }
+    }
+    @media (max-width:374px){
+        .coin-name{
+            float: right;
+            padding-right: 127px;
+            padding-top: 10px;
+            font-size: 8px;
+        }
+    }
+    @media (max-width:364px){
+        .user-div{
+            padding-left: 160px;
+            padding-right: 0;
+            padding-top: 9px;
+            right: 0;
+            float: right;
+        }
+        .coin-name{
+            float: right;
+            padding-right: 126px;
+            padding-top: 10px;
+            font-size: 8px;
+        }
+    }
+  
+    @media (max-width:358px){
+        .coin-name{
+            float: right;
+            padding-right: 120px;
+            padding-top: 10px;
+            font-size: 8px;
+        }
+    }
+    @media (max-width:348px){
+        .coin-name{
+            float: right;
+            padding-right: 113px;
+            padding-top: 10px;
+            font-size: 8px;
+        }
+    }
+    @media (max-width:338px){
+        .coin-name{
+            float: right;
+            padding-right: 107px;
+            padding-top: 10px;
+            font-size: 8px;
+        }
+    }
+    @media (max-width:329px){
+        .coin-name{
+            float: right;
+            padding-right: 102px;
+            padding-top: 10px;
+            font-size: 6px;
+        }
+    }
+    @media (max-width:310px){
+        .coin-name{
+            float: right;
+            padding-right: 70px;
+            padding-top: 10px;
+            font-size: 8px;
+        }
+    }
+    @media (max-width:290px){
+        .coin-name{
+            float: right;
+            padding-right: 40px;
+            padding-top: 10px;
+            font-size: 6px;
+        }
     }

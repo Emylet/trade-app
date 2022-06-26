@@ -6,203 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tradx-com</title>
     <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="index.css">
     <script>
         $(document).ready(function() {
-            $("#div-pwd").delay(1000).fadeIn();
+            $("#div-pwd").show();
             $('#next').click(function(e){
                 $('#container').show()
-                $('#div-pwd').fadeOut();
-                
+                $('#div-pwd').hide();
+            });
+            $("#signUp").click(function(e){
+                $("#reset-div").show();
+                $('#container').hide();
+                $('#div-pwd').hide();
+            });
+            $("#back").click(function(e){
+                $("#reset-div").hide();
+                $('#container').show();
+                $('#div-pwd').hide();
+            });
+            $(".tms").click(function() {
+                $(this).attr('disabled', 'disabled');
             });
         });
     </script>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            background: rgba(0, 0, 0, 0.842);
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            text-align: center;
-            padding-top: 40px;
-            color: darkblue;
-        }
-        h1{
-            color: white;
-            font-family: times;
-        }
-        h1 strong{
-            color: yellow;
-        }
-        ul{
-            list-style: none;
-        }
-        ul li {
-            padding: 5px;
-            background: #f4f4f4;
-            margin: 5px 0;
-        }
-        #container {
-            display: none;
-            margin: auto;
-            width: 500px;
-            overflow: auto;
-            background: lightskyblue;
-            padding: 3rem 2rem;
-        }
-        .input-txt{
-            font-weight: bold;
-            color: darkblue;
-        }
-        #my-form{
-            padding: 2rem;
-            
-        }
- 
-        #my-form label{
-            display: block;
-        }
- 
-        #my-form input[type='text'] {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        .btn{
-            width: 30%;
-            padding: 10px 15px;
-            border: 0;
-            background: #333;
-            color: #fff;
-            border-radius: 5px;
-            margin: 5px 0;
-        }
-        .msg{
-            color: red;
-            font-weight: bold;
-        }
-        #div-pwd{
-            margin: auto;
-            width: 500px;
-            overflow: auto;
-            justify-content: center;
-            padding: 3rem 2rem;
-            text-align: center;
-            background: black;
-        }
-        .copy-sec{
-            padding: 9px;
-            font-size: 20px;
-            color: whitesmoke;
-        }
-        .form-sec{
-            display: flex;
-            padding: 14px;
-            margin: 7px;
-            text-align: center;
-            justify-content: center;
-        }
-        .userN, .coupon{
-            width: 250px;
-            height: 28px;
-            margin: 10px;
-            padding-left: 10px;
-        }
-      
-        #copy{
-            background: rgb(0, 13, 128);
-            color: whitesmoke;
-            width: 70px;
-            height: 20px;
-            outline: none;
-            border-radius: 5px;
-            border: none;
-            font-weight: bold;
-        }
-        .saveInfo{
-            font-size: 15px;
-            color: whitesmoke;
-        }
-        #next{
-            background: none;
-            border:  2px solid whitesmoke;
-            border-radius: 5px;
-            width: 70px;
-            font-weight: bold;
-            color: yellow;
-            margin: 20px;
-        }
-        @media (max-width:500px){
-            body{
-            background: rgba(0, 0, 0, 0.842);
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            height: 100%;
-            text-align: center;
-            padding-top: 30px;
-            color: darkblue;
-        }
-        #div-pwd{
-            margin: auto;
-            width:  330px;
-            overflow: auto;
-            height: 50%;
-            justify-content: center;
-            padding: 3rem 2rem;
-            text-align: center;
-            background: black;
-        }
-        .copy-sec{
-            padding: 9px;
-            font-size: 18px;
-            color: whitesmoke;
-        }
-        .saveInfo{
-            font-size: 14px;
-            color: whitesmoke;
-        }
-            #container {
-            margin: auto;
-            width: 370px;
-            height: 80%;
-            overflow: auto;
-            background: lightskyblue;
-            padding: 3rem 2rem;
-        } 
-        #my-form{
-            padding: 2rem;
-            height: 400px;
-        }
-        #my-form input[type='text'] {
-            width: 92%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        .btn{
-            width: 75px;
-            height: 27px;
-            border: 0;
-            padding-top: 6px;
-            background: #333;
-            color: #fff;
-            font-size: 13px;
-            font-weight: bold;
-            font-family: arial;
-            border-radius: 5px;
-        }
-    }
- 
-     </style>
  </head>
  <main>
- <h1>Trade<strong>com</strong></h1>
+    <h1>Nor<strong>dix</strong></h1>
  <section id="container">
  <form id="my-form">
     
@@ -212,15 +41,17 @@
      </div>
      <div>
          <label class="input-txt" for="email">Password</label>
-         <input type="text" id="email">
+         <input class="pswd-btn" type="password" id="email">
      </div>
+     <div class="btnlog-div">
      <input class="btn" type="button" value="Login" onclick="logIn()">
-     <input class="btn" id="signUp" type="button" value="Sign Up" onclick="SignUps()">
-     <br>
+     <input class="btn" id="signUp" type="button" value="Forgot">
+     </div>
      <br>
      <div class="msg"></div>
-     <br>
-     <p><a href="#">Forgot Password</a> </p>
+     <div class="terms-div">
+        <a href="#"><p>Read our terms and policy</p></a>
+     </div>
  </form> 
  </section>
 <div id="div-pwd">
@@ -229,25 +60,44 @@
         <form class="for-sec">
             <div>
                 
+                <input type="text" id="mail" placeholder="Email Address" class="mail-class">
+            </div>
+            <div>
+                
                 <input type="text" id="name" placeholder="Username" class="userN">
             </div>
             
             <div>
-            
                 <input type="text" id="email" placeholder="Password" class="coupon">
             </div>
             <button id="copy">Copy</button>
         </form>
         <p class="saveInfo">Remember to save this Password</p>
         <button id="next">NEXT</button>
+        
+    </div>
+</div>
+<div id="reset-div">
+    <div class="cont-reset">
+        <h2>Forgot Password</h2>
+        <div id="reset-section">
+            <p>Enter your email address </p>
+            <input id="reset-input" type="text" class="userN">
+            <br>
+            <input id="back" class="btn-fgs" type="button" value="Back">
+            <input id="Ireset" class="btn-fgs" type="button" onclick="resetAbc()" value="Next">
+        </div>
+        <p id="noti"></p>
     </div>
 </div>
 </main>
  
      <script>
          var copybtn = document.getElementById("copy");
-         var userN = document.querySelector(".userN");
-         var coupon = document.querySelector(".coupon");
+         
+         var resetI = document.getElementById("Ireset");
+         
+         var noti = document.getElementById("noti")
 
 
 
@@ -272,6 +122,9 @@
          const mailnput = document.querySelector("#email");
          const msg = document.querySelector(".msg");
          const userList = document.querySelector("#users");
+
+         var userN = document.querySelector(".userN");
+         var coupon = document.querySelector(".coupon");
         
 
 
@@ -296,11 +149,21 @@
             mailnput.value = '';
             coupon.value = '';
             }
+            var inputRes = document.getElementById("reset-input");
+            var mail = document.getElementById("mail");
+            function resetAbc (){
+              let emialTab = mail.value;
+              let inputEle = inputRes.value;
+                if (inputEle == "") {
+                    noti.innerHTML = "Enter mail field"
+                }else if (inputEle == emialTab) {
+                    noti.innerHTML = "We've sent your password to " + inputEle;
+                    console.log(inputEle)
+                } else{
+                    noti.innerHTML = "Invalid email address"
+                };
+            };
             
-            function SignUps(){
-                msg.innerHTML = "Visit Our official site to sign Up " 
-            }
- 
      </script>
  </body>
 </body>
