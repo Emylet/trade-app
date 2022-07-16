@@ -7,16 +7,13 @@
 }
 
 .navbar{
-    background: lightskyblue;
+    background: darkblue;
     padding: 7px;
     display: flex;
 }
-#page__name strong{
-    color: purple;
-    
-}
+
 #page__name{
-    color: blue;
+    color: lime;
     font-family: times;
     padding-left: 20px;
 }
@@ -31,7 +28,6 @@ select{
     width: 75px;
     background: lightskyblue;
     color: darkblue;
-    border: 2px solid purple;
     border-radius: 5px;
     font-size: 12px;
     font-weight: bold;
@@ -39,7 +35,8 @@ select{
 }
 .fund-div{
     display: flex;
-    background: royalblue;
+    height: 40px;
+    background: darkblue;
     
 }
 .div-bal{
@@ -155,15 +152,15 @@ span{
 #dark{
     background: black;
     color: white;
-    width: 50px;
+    width: 40px;
     padding-bottom: 5px;
     height: 20px;
-    border-radius: 5px;
+    border-radius: 0;
     float: right;
 }
 #light{
     color: black;
-    width: 50px;
+    width: 40px;
     height: 20px;
     float: right;
 }
@@ -176,7 +173,7 @@ span{
         font-size: 23px;
     }
     #page__name{
-        color: blue;
+        color: lime;
         font-family: times;
         padding-left: 0;
     }
@@ -189,11 +186,13 @@ span{
     }
     
     select{
-        width: 75px;
+        width: 80px;
         background: lightskyblue;
         color: darkblue;
-        border: 2px solid purple;
-        border-radius: 5px;
+        border: none;
+        outline: none;
+        padding-left: 7px;
+        border-radius: 0;
         font-size: 12px;
         font-weight: bold;
         font-family: arial;
@@ -255,15 +254,16 @@ span{
     #dark{
         background: black;
         color: white;
-        width: 50px;
+        width: 40px;
         padding-bottom: 5px;
-        height: 20px;
-        border-radius: 5px;
+        height: 19px;
+        border-radius: 0;
     }
     #light{
         color: black;
-        width: 50px;
-        height: 20px;
+        width: 40px;
+        height: 19px;
+        border-radius: 0;
     }
     @media (max-width:406px){
     

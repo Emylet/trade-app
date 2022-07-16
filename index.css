@@ -8,8 +8,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     text-align: center;
-    padding-top: 40px;
-    color: darkblue;
+    color: whitesmoke;
 }
 h1{
     color: rgb(226, 17, 226);
@@ -19,6 +18,10 @@ h1{
 h1 strong{
     color: blue;
     font-family: times;
+}
+h2{
+    padding-top: 0;
+    margin-top: 0;
 }
 ul{
     list-style: none;
@@ -32,10 +35,9 @@ ul li {
     display: none;
     margin: auto;
     width: 600px;
-    border-radius: 5px;
+    border-radius: 0;
     overflow: auto;
-    background: lightskyblue;
-    padding: 3rem 2rem;
+    background: black;
 }
 .input-txt{
     font-weight: bold;
@@ -48,6 +50,7 @@ ul li {
 
 #my-form label{
     display: block;
+    color: whitesmoke;
 }
 
 #my-form input[type='text'] {
@@ -75,8 +78,19 @@ ul li {
     width: 20%;
     padding: 10px 15px;
     border: 0;
-    background: #333;
+    font-size: 16px;
+    background: none;
     color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.btn-f{
+    width: 20%;
+    padding: 10px 15px;
+    border: 0;
+    background: none;
+    color: #fff;
+    font-size: 16px;
     border-radius: 5px;
     margin: 5px 0;
 }
@@ -170,21 +184,20 @@ ul li {
 }
 @media (max-width:500px){
     body{
-    background: rgba(0, 0, 0, 0.842);
+    background: rgb(241, 232, 232);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     height: 100%;
     text-align: center;
-    padding-top: 30px;
-    color: darkblue;
+    color: whitesmoke;
 }
 #div-pwd{
     margin: auto;
     width:  330px;
     overflow: auto;
-    height: 50%;
+    height: 370px;
     justify-content: center;
-    padding: 3rem 2rem;
+    padding: 2rem 1rem;
     text-align: center;
     background: black;
 }
@@ -212,15 +225,17 @@ ul li {
  #container {
     margin: auto;
     width: 340px;
-    height: 80%;
-    border-radius: 10px;
+    height: 390px;
+    border-radius: 0;
     overflow: auto;
-    background: lightskyblue;
-    padding: 3rem 2rem;
+    color: whitesmoke;
+    background: black;
+    padding: 2rem 1rem;
 } 
 #my-form{
     padding: 2rem;
     height: 400px;
+    color: whitesmoke;
 }
 #my-form input[type='text'] {
     width: 90%;
@@ -250,12 +265,26 @@ ul li {
     border: 0;
     padding-top: 6px;
     text-align: center;
-    background: #333;
+    background: none;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     font-family: arial;
     border-radius: 5px;
+}
+.btn-f{
+    width: 65px;
+    height: 27px;
+    border: 0;
+    padding-top: 6px;
+    text-align: center;
+    background:none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: arial;
+    border-radius: 5px;
+    padding-right: 3px;
 }
 .btn-fgs{
     background: none;
