@@ -12,11 +12,11 @@ body{
 }
 h1{
     color: rgb(226, 17, 226);
-    font-size: 34px;
+    font-size: 30px;
     
 }
 h1 strong{
-    color: blue;
+    color: rgb(8, 105, 143);
     font-family: times;
 }
 h2{

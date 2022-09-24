@@ -5,28 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="dash.css">
+    <script>
+        $(document).ready(function() {
+            $('#pop-acc').click(function(e){
+                $('#popUp').show();
+        })
+
+        $('#pop-dep').click(function(e){
+                $('#popUp').show();
+        })
+
+        $('#pop-wd').click(function(e){
+                $('#popUp').show();
+        })
+
+        $('#pop-limt').click(function(e){
+                $('#popUp').show();
+        })
+
+        $('#pop-mng').click(function(e){
+                $('#popUp').show();
+        })
+
+        $('#pop-sav').click(function(e){
+                $('#popUp').show();
+        })
+
+        $('#pop-sch').click(function(e){
+                $('#popUp').show();
+        })
+
+        $('#btn-c').click(function(e){
+                $('#popUp').hide();
+        })
+    });
+    </script>
 </head>
 <body id="body-bg">
    <!--Navbar Section-->
    <nav class="navbar">
-           <h1 id="page__name"> <strong>Nor</strong>dix</h1>
+           <h1> <strong>Nor</strong>dix</h1>
         <div class="user-div">
            <select>
-            <option>Account</option>
+            <option id="pop-acc">Account</option>
             <option>History</option>
-            <option>Deposit</option>
-            <option>Widrawal </option>
+            <option id="pop-dep">Deposit</option>
+            <option id="pop-wd">Withdrawal </option>
             <option>Contact</option>
             </select>
         </div>
    </nav>
+   <div id="popUp">
+       <button id="btn-c">x</button>
+       <h2>VERIFY ACCOUNT </h2>
+       <p class="p-letter">You need to verify as an eligible student from Nordix accredited 
+           Institution to benefit from this empowerment!
+       </p><br>
+       <button id="btn-v">VERIFY</button>
+   </div>
    <div class="fund-div">
-       <div class="div-bal">bal: $35,575,097</div>
+       <div class="div-bal">Bal: $35,575</div>
        <ul class="trans-ul">
-           <a href="#"><li>LIMITS</li> </a>
-           <a href="#"><li>SAVINGS</li></a>
-           <a href="#"><li>MANAGE</li></a>
+           <a id="pop-limt" href="#"><li >LIMITS</li></a>
+           <a id="pop-sav" href="#"><li>SAVING</li></a>
+           <a id="pop-mng" href="#"><li>MANAGE</li></a>
+           <a id="pop-sch" href="#"><li>SCHOOL</li></a>
           
    </div>
    <main class="main" >
@@ -34,96 +79,134 @@
                     <div class="crypt-div">
                         <img src="images/btc.png">
                         <span >BTC</span>
-                        <span class="coin-name">14,7736</span>
+                        <span class="coin-name">0.000</span>
                    </div>
                    <hr>
                     <div class="crypt-div">
                         <img src="images/images.jpg">
                         <span >ETH</span>
-                        <span class="coin-name">14,7790</span>
+                        <span class="coin-name">0.000</span>
                    </div>
                    <hr>
                    <div class="crypt-div">
                     <img src="images/Ltc.png">
                     <span >LTC</span>
-                    <span class="coin-name">14,7736</span>
+                    <span class="coin-name">0.000</span>
                     </div>
                     <hr>
                     <div class="crypt-div">
                         <img src="images/download.png">
                         <span >TRN</span>
-                        <span class="coin-name">14,7736</span>
+                        <span class="coin-name">0.000</span>
                    </div>
                    <hr>
                    <div class="crypt-div">
                     <img src="images/download (3).png">
                     <span >BNB</span>
-                    <span class="coin-name">14,7736</span>
+                    <span class="coin-name">0.000</span>
                     </div>
                     <hr>
                     <div class="crypt-div">
                         <img src="images/download (4).png">
                         <span >ADA</span>
-                        <span class="coin-name">14,7736</span>
+                        <span class="coin-name">0.000</span>
                    </div>
                    <hr>
                    <div class="crypt-div">
                     <img src="images/btc.png">
                     <span >BTC</span>
-                    <span class="coin-name">14,7736</span>
+                    <span class="coin-name">0.000</span>
                     </div>
                     <hr>
                     <div class="crypt-div">
                         <img src="images/btc.png">
                         <span >BTC</span>
-                        <span class="coin-name">14,7736</span>
+                        <span class="coin-name">0.000</span>
                    </div>
                    <hr>
                     <div class="crypt-div">
                         <img src="images/images.jpg">
                         <span >ETH</span>
-                        <span class="coin-name">14,7790</span>
+                        <span class="coin-name">0.000</span>
                    </div>
                    <hr>
                    <div class="crypt-div">
                     <img src="images/Ltc.png">
                     <span >LTC</span>
-                    <span class="coin-name">14,7736</span>
+                    <span class="coin-name">0.000</span>
                     </div>
                     <hr>
                     <div class="crypt-div">
                         <img src="images/download.png">
                         <span >TRN</span>
-                        <span class="coin-name">14,7736</span>
+                        <span class="coin-name">0.000</span>
                    </div>
                    <hr>
                    <div class="crypt-div">
                     <img src="images/download (3).png">
                     <span >BNB</span>
-                    <span class="coin-name">14,7736</span>
+                    <span class="coin-name">0.000</span>
                     </div>
                     <hr>
                     <div class="crypt-div">
                         <img src="images/download (4).png">
                         <span >ADA</span>
-                        <span class="coin-name">14,7736</span>
+                        <span class="coin-name">0.000</span>
                    </div>
                    <hr>
                    <div class="crypt-div">
                     <img src="images/btc.png">
                     <span >BTC</span>
-                    <span class="coin-name">14,7736</span>
+                    <span class="coin-name">0.000</span>
                     </div>
                     <hr>
                
        </div>
-       <div class="nft-div">
+       <div class="nft-div" id="nft-advt">
            <div class="id-div">
-                <p id="status">Status: <strong>Unverified</strong></p>
-                <p id="menuInfo"></p>
+                <h4 id="status">Status: <strong>Unverified</strong> </h4>
+                <ul class="st-ul">
+                    <li class="st-li"><u><a href="#"> Verify </a></u></li>
+                    <li class="st-li"><u><a  id="pop-v" href="#"> Update</a></u></li>
+                    <li class="st-li"><u><a  id="pop-v" href="#"> Profile </a></u> </li>
+                </ul>
+                <p id="menuInfo">Verify account to mint NFTs</p>
             </div>
     </div>
    </main>
+<div class="refDv">
+<div id="advert-sec1">
+    <h2>About?</h2>
+    <p>
+        Nordix is an International brand trade, establisshed from Nordic Summer School for Norwegian Students and other Nordic region Schools.
+        Aimed towards empowering and leading students through digital world of crypto and social-economic values.
+    </p>
+</div>
+<div id="advert-sec2">
+    <h2>Limit Cycle!</h2>
+    <p>
+        NorDix is termed under International monetary fund regulation,
+        this implies that each verified student under the digital tech 
+        empowerment scheme have to mine through accredited duration of cycle 
+        ranging from 16months of prospective academic calendar before 
+        alteration of Funds/NFTs. 
+
+
+    </p>
+</div>
+<div id="advert-sec2">
+    <h2>Validation</h2>
+    <p>
+        <strong>Note!</strong> This Fund is invalid for students with unaccredited 
+        school references, click <a class="acrd" href="#">here to see accredited schools </a>
+    </p>   
+    <p>
+        The limits cycle remains dormant with void fund for unverified students.
+
+
+    </p>
+</div>
+</div>
 
 
     <div class="footer">

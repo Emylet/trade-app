@@ -5,7 +5,15 @@
     font-family: 'kumbh sans', sans-serif;
     scroll-behavior: smooth;
 }
-
+h1{
+    color: rgb(226, 17, 226);
+    font-size: 30px;
+    
+}
+h1 strong{
+    color: skyblue;
+    font-family: times;
+}
 .navbar{
     background: darkblue;
     padding: 7px;
@@ -33,6 +41,35 @@ select{
     font-weight: bold;
     font-family: arial;
 }
+#popUp{
+    display: none;
+    text-align: center;
+    margin: 3px;
+    padding: 6px;
+    background: seashell;
+}
+.p-letter{
+    color: darkblue;
+    font-weight: bold;
+}
+#btn-c{
+    float: right;
+    height: 20px;
+    padding-bottom: 2px;
+}
+#btn-v{
+    width: 90px;
+    background: whitesmoke;
+    color: darkblue;
+    border: 2px solid darkblue;
+    border-radius: 6px;
+    font-family: times;
+    font-weight: bold;
+}
+#btn-v:hover{
+    color: darkmagenta;
+    background: darkblue;
+}
 .fund-div{
     display: flex;
     height: 40px;
@@ -40,10 +77,11 @@ select{
     
 }
 .div-bal{
-    padding-top: 10px;
+    padding-top: 1px;
     color: white;
     padding-left: 30px;
     font-weight: bold;
+    font-size: 12px;
 }
 .trans-ul{
     display: flex;
@@ -53,10 +91,16 @@ select{
     color: whitesmoke;
     font-weight: bold;
 }
+li{
+    font-weight: bold;
+    font-size: 11px;
+    padding-top: 3px;
+
+}
 a{
     margin: 10px;
-    color: whitesmoke;
     text-decoration: none;
+    color: whitesmoke;
 }
 a:hover{
     color: orangered;
@@ -73,24 +117,90 @@ a:hover{
 }
 .main{
     display: flex;
-    height: 100vh;
+    height:200px;
     color: darkblue;
+    border-bottom: 2px solid darkblue;
 }
 .coins-div{
     flex: 1.5;
     border-right: 2px solid blue;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 200px;
 }
 .nft-div{
     flex: 1;
     padding-top: 5px;
+    height: 200px;
+    width: 100%;
+    background-size: 100%;
+    background-image: url(advert/Ads5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+   
+    
 }
 .crypt-div{
     padding-left: 6px;
     
 }
+#status{
+    padding-top: 4px;
+}
+.st-ul{
+    display: flex;
+    margin: 0;
+}
+.st-li{
+    margin: 1px;
+    padding-left: 0;
+    font-weight: bold;
+}
+#menuInfo{
+    padding-top: 110px;
+    font-weight: bold;
+}
+.st-li a{
+    color: darkblue;
+}
+.st-li a:hover{
+    color: darkred;
+}
 ul{
     list-style: none;
     
+}
+.refDv{
+    padding: 1px;
+    justify-content: center;
+    margin: 3px;
+}
+#advert-sec1{
+   text-align: center;
+   border-bottom: 2px solid darkblue;
+   background: whitesmoke;
+   
+}
+h2{
+    color: purple;
+    padding-top: 2px;
+}
+#advert-sec1{
+    height: 130px;
+    background-size: 100%;
+    background-image: url(advert/flag.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    color: rgb(73, 238, 8);
+}
+#advert-sec2{
+    text-align: center;
+    padding: 1px;
+}
+.acrd{
+    color: blue;
 }
 
 img{
@@ -164,6 +274,7 @@ span{
     height: 20px;
     float: right;
 }
+
 
 @media (max-width:500px){
     body{
@@ -268,7 +379,7 @@ span{
     @media (max-width:406px){
     
         .user-div{
-            padding-left: 220px;
+            padding-left: 190px;
             padding-right: 0;
             padding-top: 9px;
             right: 0;
@@ -309,7 +420,7 @@ span{
         }
         .coin-name{
             float: right;
-            padding-right: 140px;
+            padding-right: 130px;
             padding-top: 10px;
             font-size: 7px;
         }
@@ -347,7 +458,7 @@ span{
         }
         .coin-name{
             float: right;
-            padding-right: 126px;
+            padding-right: 115px;
             padding-top: 10px;
             font-size: 8px;
         }
@@ -356,7 +467,7 @@ span{
     @media (max-width:358px){
         .coin-name{
             float: right;
-            padding-right: 120px;
+            padding-right: 110px;
             padding-top: 10px;
             font-size: 8px;
         }
@@ -364,15 +475,22 @@ span{
     @media (max-width:348px){
         .coin-name{
             float: right;
-            padding-right: 113px;
+            padding-right: 100px;
             padding-top: 10px;
             font-size: 8px;
         }
     }
     @media (max-width:338px){
+        .user-div{
+            padding-left: 140px;
+            padding-right: 0;
+            padding-top: 9px;
+            right: 0;
+            float: right;
+        }
         .coin-name{
             float: right;
-            padding-right: 107px;
+            padding-right: 90px;
             padding-top: 10px;
             font-size: 8px;
         }
@@ -380,7 +498,7 @@ span{
     @media (max-width:329px){
         .coin-name{
             float: right;
-            padding-right: 102px;
+            padding-right: 75px;
             padding-top: 10px;
             font-size: 6px;
         }
@@ -388,7 +506,7 @@ span{
     @media (max-width:310px){
         .coin-name{
             float: right;
-            padding-right: 70px;
+            padding-right: 55px;
             padding-top: 10px;
             font-size: 8px;
         }
@@ -396,7 +514,7 @@ span{
     @media (max-width:290px){
         .coin-name{
             float: right;
-            padding-right: 40px;
+            padding-right: 36px;
             padding-top: 10px;
             font-size: 6px;
         }
