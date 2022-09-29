@@ -7,6 +7,7 @@
     <title>Dashboard</title>
     <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="css/all.css">
     <script>
         $(document).ready(function() {
             $('#pop-acc').click(function(e){
@@ -42,29 +43,27 @@
         })
     });
     </script>
+    <style>
+        
+    </style>
 </head>
 <body id="body-bg">
    <!--Navbar Section-->
    <nav class="navbar">
            <h1> <strong>Nor</strong>dix</h1>
         <div class="user-div">
-           <select>
-            <option id="pop-acc">Account</option>
-            <option>History</option>
-            <option id="pop-dep">Deposit</option>
-            <option id="pop-wd">Withdrawal </option>
-            <option>Contact</option>
-            </select>
-        </div>
+            <ul class="container">
+                <ul id="ice-creams">
+                        <span class="arrow flavours"><i href="#" class="fas fa-user"></i></span>
+                        <ul class="more">
+                            <li id="pop-acc">PROFILE</li>
+                            <li id="pop-dep">HISTORY</li>
+                            <li id="pop-wd">WALLET</li>
+                            <li id="pop-wd">ABOUT</li>
+                        </ul>
+                </ul>
    </nav>
-   <div id="popUp">
-       <button id="btn-c">x</button>
-       <h2>VERIFY ACCOUNT </h2>
-       <p class="p-letter">You need to verify as an eligible student from Nordix accredited 
-           Institution to benefit from this empowerment!
-       </p><br>
-       <button id="btn-v">VERIFY</button>
-   </div>
+   
    <div class="fund-div">
        <div class="div-bal">Bal: $35,575</div>
        <ul class="trans-ul">
@@ -74,6 +73,14 @@
            <a id="pop-sch" href="#"><li>SCHOOL</li></a>
           
    </div>
+   <div id="popUp">
+    <button id="btn-c">x</button>
+    <h2>VERIFY ACCOUNT </h2>
+    <p class="p-letter">You need to verify as an eligible student from Nordix accredited 
+        Institution to benefit from this empowerment!
+    </p><br>
+    <a href="veri.html"><button id="btn-v">VERIFY </button></a>
+</div>
    <main class="main" >
        <div class="coins-div">
                     <div class="crypt-div">
@@ -166,40 +173,41 @@
            <div class="id-div">
                 <h4 id="status">Status: <strong>Unverified</strong> </h4>
                 <ul class="st-ul">
-                    <li class="st-li"><u><a href="#"> Verify </a></u></li>
-                    <li class="st-li"><u><a  id="pop-v" href="#"> Update</a></u></li>
-                    <li class="st-li"><u><a  id="pop-v" href="#"> Profile </a></u> </li>
+                    <li class="st-li"><a href="veri.html"> VERIFY </a></li>
+                    <li class="st-li"><a  id="pop-v" href="#"> UPDATE</a></li>
                 </ul>
-                <p id="menuInfo">Verify account to mint NFTs</p>
             </div>
     </div>
    </main>
 <div class="refDv">
 <div id="advert-sec1">
-    <h2>About?</h2>
-    <p>
-        Nordix is an International brand trade, establisshed from Nordic Summer School for Norwegian Students and other Nordic region Schools.
-        Aimed towards empowering and leading students through digital world of crypto and social-economic values.
-    </p>
-</div>
-<div id="advert-sec2">
-    <h2>Limit Cycle!</h2>
+    <h2>Limit Cycle</h2>
     <p>
         NorDix is termed under International monetary fund regulation,
         this implies that each verified student under the digital tech 
         empowerment scheme have to mine through accredited duration of cycle 
         ranging from 16months of prospective academic calendar before 
         alteration of Funds/NFTs. 
-
-
+    </p>
+    <br>
+    <p>
+        NorDix er betegnet under regulering av internasjonale pengefond, dette innebaerer at hver verifisert student under digital tech empowerment-ordningen ma gruve gjennom akkreditert sklusvarighet som strekker seg fra 16 maneder med potensiell akademisk kalender for endring av fond/NFT
     </p>
 </div>
 <div id="advert-sec2">
     <h2>Validation</h2>
     <p>
         <strong>Note!</strong> This Fund is invalid for students with unaccredited 
-        school references, click <a class="acrd" href="#">here to see accredited schools </a>
+        school references,<a class="acrd" href="#">click here</a> to see accredited schools 
     </p>   
+    <p>
+        The limits cycle remains dormant with void fund for unverified students.
+
+
+    </p>
+    <br>
+    <p>
+        <strong>Merk!</strong> Dette fonde er ugyldig for studenter med uakkrediterte skolereferanser,<a class="acrd" href="#"> Klikk her </a>a for a se akkrediterte skoler. Grensesyklusen forblir sovende med ugyldig fond for ubekreftede studenter.    </p>   
     <p>
         The limits cycle remains dormant with void fund for unverified students.
 
@@ -214,13 +222,12 @@
                 <a href="#" id="walle" onclick="logOut()">Log Out</a>
                 <a href="#" id="walle">Terms</a>
                 <a href="#" id="walle">Policy</a>
-                <a href="#" id="wallet">credits</a>
-                <button id="dark" onclick="darkShow()">
-                    Dark
-                </button>
-                <button id="light" onclick="lightShow()">
-                    Light 
-                </button>
+                <a href="#" id="walle">follow us>></a>
+
+                <a href="https://wa.me/+2348109954209" class="fab fa-whatsapp"> </a>
+                <a href="#"  class="fab fa-facebook-f "> </a>
+                <a href="#" class="fa-brands fa-instagram"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
                     
                     
                 <div class="bags-color">
@@ -229,6 +236,7 @@
             </div>    
     </div>
     <script type="text/javascript" src="index.js">
+
     </script>
 </body>
 </html>

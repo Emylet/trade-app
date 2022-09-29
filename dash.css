@@ -5,6 +5,9 @@
     font-family: 'kumbh sans', sans-serif;
     scroll-behavior: smooth;
 }
+body{
+    background: linear-gradient(135deg,#71b7c6,#9b59b6);
+}
 h1{
     color: rgb(226, 17, 226);
     font-size: 30px;
@@ -15,7 +18,8 @@ h1 strong{
     font-family: times;
 }
 .navbar{
-    background: darkblue;
+    height: 50px;
+    background: linear-gradient(135deg,#1c3a41,#401452);
     padding: 7px;
     display: flex;
 }
@@ -26,20 +30,55 @@ h1 strong{
     padding-left: 20px;
 }
 .user-div{
-    padding-left: 1000px;
-    padding-right: 0;
-    padding-top: 6px;
-    right: 0;
-    float: right;
+    position: absolute;
+    top: 1px;
+    right: 50px;
+    margin-right: 10px;
+    color: whitesmoke;
 }
-select{
-    width: 75px;
-    background: lightskyblue;
-    color: darkblue;
-    border-radius: 5px;
+.container{
+    padding-right: 10px;
+    width: 70px;
+}
+#ice-creams, .more{
+    list-style: none;
+}
+
+.flavours{
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 600;
     font-family: arial;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.more{
+    font-size: 12px;
+}
+.arrow::before{
+    content: '\25B6';
+    color: #1c3a41;
+    margin-right: 1px;
+    display: inline-block;
+}
+.more{
+    cursor: pointer;
+    padding-left: 10px;
+    width: 90px;
+    display: none;
+    color: whitesmoke;
+    background: #21042c;
+    overflow-y: scroll;
+    
+}
+.more li:hover{
+    color: tomato;
+}
+.show{
+    display: block;
+}
+.arrow-down::before{
+    transform: rotate(-270deg);
 }
 #popUp{
     display: none;
@@ -66,14 +105,20 @@ select{
     font-family: times;
     font-weight: bold;
 }
-#btn-v:hover{
-    color: darkmagenta;
+ a #btn-v{
+    color: darkblue;
+}
+#btn-v :hover{
+    background: darkblue;
+}
+ a #btn-v:hover{
+    color: whitesmoke;
     background: darkblue;
 }
 .fund-div{
     display: flex;
     height: 40px;
-    background: darkblue;
+    background: linear-gradient(135deg,#1c3a41,#401452);
     
 }
 .div-bal{
@@ -118,12 +163,13 @@ a:hover{
 .main{
     display: flex;
     height:200px;
-    color: darkblue;
-    border-bottom: 2px solid darkblue;
+    color: whitesmoke;
+    border-top: 1px solid whitesmoke;
+    background: linear-gradient(135deg,#294349,#512663);
 }
 .coins-div{
     flex: 1.5;
-    border-right: 2px solid blue;
+    border-right: 1px solid whitesmoke;
     overflow: scroll;
     overflow-x: hidden;
     height: 200px;
@@ -151,6 +197,7 @@ a:hover{
 .st-ul{
     display: flex;
     margin: 0;
+    padding-left: 12px;
 }
 .st-li{
     margin: 1px;
@@ -162,7 +209,9 @@ a:hover{
     font-weight: bold;
 }
 .st-li a{
-    color: darkblue;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 10px;
 }
 .st-li a:hover{
     color: darkred;
@@ -172,30 +221,45 @@ ul{
     
 }
 .refDv{
-    padding: 1px;
+    margin: 5px;
     justify-content: center;
-    margin: 3px;
+    background: linear-gradient(135deg,#71b7c6,#9b59b6);
+}
+#advert-sec1, #advert-sec2{
+    background: white;
+    height: 220px;
+    border-radius: 10px;
+    margin: 5px;
+    border: 1px solid blue;
+    color: darkblue;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 16px;
 }
 #advert-sec1{
    text-align: center;
    border-bottom: 2px solid darkblue;
-   background: whitesmoke;
+   background: linear-gradient(135deg,#71b7c6,#9b59b6);
    
 }
+#advert-sec2{
+    text-align: center;
+    border-bottom: 2px solid darkblue;
+    background: linear-gradient(135deg,#71b7c6,#9b59b6);
+    
+ }
 h2{
     color: purple;
     padding-top: 2px;
 }
 #advert-sec1{
-    height: 130px;
-    background-size: 100%;
-    background-image: url(advert/flag.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
-    color: rgb(73, 238, 8);
+    color: darkblue;
 }
 #advert-sec2{
+    text-align: center;
+    padding: 1px;
+}
+#advert-sec3{
     text-align: center;
     padding: 1px;
 }
@@ -225,7 +289,7 @@ span{
 }
 
 .footer{
-    background: rgb(0, 3, 5);
+    background: linear-gradient(135deg,#1c3a41,#401452);
     bottom: 0;
     position: fixed;
     height: 50px;
@@ -250,12 +314,35 @@ span{
     text-decoration: none;
 }
 #wallet{
-    color: black;
+    color: whitesmoke;
     font-size: 12px;
     font-weight: bold;
     font-family: arial;
     margin: 5px;
     padding-top: 26px;
+    text-decoration: none;
+}
+.fa-user{
+    color: whitesmoke;
+    font-size: 15px;
+}
+.fab{
+    color: rgb(107, 107, 230);
+    font-size: 14px;
+}
+.fa-whatsapp{
+    color: rgb(13, 235, 13);
+    font-size: 15px;
+}
+.fa-instagram{
+    color: pink;
+    font-size: 15px;
+}
+.fa-twitter{
+    color: lightskyblue;
+    font-size: 15px;
+}
+a .fas, .fab{
     text-decoration: none;
 }
 
@@ -295,19 +382,7 @@ span{
         right: 0;
         float: right;
     }
-    
-    select{
-        width: 80px;
-        background: lightskyblue;
-        color: darkblue;
-        border: none;
-        outline: none;
-        padding-left: 7px;
-        border-radius: 0;
-        font-size: 12px;
-        font-weight: bold;
-        font-family: arial;
-    }
+   
     .trans-ul{
         display: flex;
         padding-left: 30px;
@@ -322,6 +397,40 @@ span{
         padding-left: 10px;
         font-weight: bold;
     }
+    .refDv{
+        display: flex;
+        margin: 10px;
+        height: 100vh;
+        overflow-x: scroll;
+        justify-content: center;
+    }
+    #advert-sec1, #advert-sec2{
+        background: white;
+        width: 190px;
+        height: 270px;
+        border-radius: 10px;
+        margin-top: 10px;
+        border: 1px solid blue;
+        color: pink;
+        padding-top: 5px;
+        text-align: center;
+        font-size: 12px;
+    }
+    #advert-sec1{
+       text-align: center;
+       border-bottom: 2px solid darkblue;
+       background: linear-gradient(135deg,#71b7c6,#9b59b6);
+       overflow-y: scroll;
+       
+    }
+    #advert-sec2{
+        text-align: center;
+        border-bottom: 2px solid darkblue;
+        background: linear-gradient(135deg,#71b7c6,#9b59b6);
+        overflow-y: scroll;
+        
+     }
+
     a{
         margin: 5px;
         color: whitesmoke;
@@ -338,6 +447,20 @@ span{
     }
     .nav-btn:hover{
         color: orangered;
+    }
+    .main{
+        display: flex;
+        height:154px;
+        color: whitesmoke;
+        border-top: 1px solid whitesmoke;
+        background: linear-gradient(135deg,#294349,#512663);
+    }
+    .coins-div{
+        flex: 1.5;
+        border-right: 1px solid whitesmoke;
+        overflow: scroll;
+        overflow-x: hidden;
+        height: 154px;
     }
     img{
         background-position: center;
@@ -376,6 +499,7 @@ span{
         height: 19px;
         border-radius: 0;
     }
+    
     @media (max-width:406px){
     
         .user-div{
