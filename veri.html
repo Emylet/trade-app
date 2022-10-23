@@ -17,28 +17,28 @@
             <div class="user-details"> 
                 <div class="input-box"> 
                     <span class="details">First Name</span>
-                    <input type="text" placeholder="Enter your firstname" required>
+                    <input id="fstNm" type="text" placeholder="Enter your firstname" required>
                 </div>
                 <div class="input-box"> 
                     <span class="details">Last Name</span>
-                    <input type="text" placeholder="Enter your lastname" required>
+                    <input id="fstNm" type="text" placeholder="Enter your lastname" required>
                 </div>
                 <div class="input-box"> 
                     <span class="details">Email</span>
-                    <input type="text" placeholder="Enter your email" required>
+                    <input id="mail" type="text" placeholder="Enter your email" required>
                 </div>
                 <div class="input-box"> 
                     <span class="details">Password</span>
-                    <input type="text" placeholder="Enter your password" required>
+                    <input id="pwd" type="text" placeholder="Enter your password" required>
                 </div>
                 <div class="input-box"> 
                     <span class="details">Phone Number</span>
-                    <input type="text" placeholder="Enter your number" required>
+                    <input id="phone" type="text" placeholder="Enter your number" required>
                 </div>
                 
                 <div class="input-box"> 
                     <span class="details">Confirm Password</span>
-                    <input type="text" placeholder="Confirm password" required>
+                    <input id="cnpwd" type="text" placeholder="Confirm password" required>
                 </div>
             </div>
             <div class="gender-details">
@@ -62,29 +62,29 @@
                 </div>
             </div>
             <div class="button">
-                <input id="regist" type="submit" value="VERIFY">
+                <button id="regist" onclick="verIn()">VERIFY</button>
             </div>
 
-            <div id="popUp">
-                <h2>VERIFICATION REQUESTED </h2>
-                <p class="p-letter">[fistName] We have received your Data, you will be notified through
-                    your provided mail address for Successful Account Verification!
-                    <p class="p-letter">At this stage you can validate and link your wallet with NorDix to Transfer and Receive from Nordix!</p>
-                </p><br>
-                <a href="veri.html"><button id="btn-v">VALIDATE </button></a>
-            </div>
-            <div id="popUp">
-                <h2>Complete Validation With </h2>
-                <div id="vld-wall">
-                    <h4><a href="#">Paypal</a></h4>
-                    <h4><a href="#">Monese</a></h4>
-                    <h4><a href="#">Zhelle</a></h4>
-                    <h4><a href="#">Cash App</a></h4>
-                    <h4><a href="#">Other</a></h4>
-                    
-                </div>
-            <p class="sb">Licensed with DNB Bank of Norway</p>
-            </div>
+            <p id="infs"></p>
         </form>
+        <script>
+           
+           var infs = document.getElementById("infs");
+           const fstNm = document.querySelector("#fstNm");
+           const mail = document.querySelector("#mail");
+           const phone = document.querySelector("#phone");
+           const pwd = document.querySelector("#pwd");
+           const cnpwd = document.querySelector("#cnpwd");
+
+            function verIn(){
+           
+                if (fstNm.value === "" || mail.value === "" || phone.value === "" || pwd.value ==="" || cnpwd.value ===""){
+                    infs.innerHTML = "Fill in all the requred inputs"
+                }
+                    else{
+                window.location.href="valid.html"
+            };
+        };
+    </script>
 </body>
 </html>
