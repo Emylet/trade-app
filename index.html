@@ -30,39 +30,41 @@
         });
     </script>
  </head>
- <h1> <strong>Nor</strong>dix</h1>
+ 
  <main>
     
  <section id="container">
-    <h2><strong>LOG IN </strong></h2>
+    <h2><strong>SIGN IN </strong></h2>
  <form id="my-form">
     
      <div>
-         <label class="input-txt" for="name">Username</label>
+         <label class="input-txt" for="name">ID NUMBER</label>
          <input type="text" id="name">
      </div>
      <div>
-         <label class="input-txt" for="email">Password</label>
+         <label class="input-txt" for="email">PASSWORD</label>
          <input class="pswd-btn" type="password" id="email">
      </div>
      <div class="btnlog-div">
      <input class="btn" type="button" value="Login" onclick="logIn()">
      <input class="btn-f" id="signUp" type="button" value="Forgot">
      </div>
-     <br>
      <div class="msg"></div>
-     <div class="terms-div">
+     <div class="terms-div"><br>
         <a href="#"><p>Read our terms and policy</p></a>
      </div>
  </form> 
  </section>
 <div id="div-pwd">
     <div class="copy-sec">
-        Generate User ID
+        <h1> <strong>Nor</strong>dix</h1>
+
+
+        
         <form class="for-sec">
             <div>
                 
-                <input type="text" id="mail" placeholder="Email Address" class="mail-class">
+                <input type="text" id="mail" placeholder="Email address" class="mail-class">
             </div>
             <div>
                 
@@ -75,7 +77,7 @@
             <button id="copy">Copy</button>
         </form>
         <p class="saveInfo">Remember to save this Password</p>
-        <button id="next">NEXT</button>
+        <input type="submit" id="next" value="NEXT">
         
     </div>
 </div>
@@ -137,7 +139,7 @@
             
 
             }
-             else if(nameInput.value === userN.value && mailnput.value === coupon.value ) {
+             else if(nameInput.value === "16107212345" && mailnput.value === coupon.value ) {
                 window.location.href="dashboard.html"
                 
             }
@@ -168,5 +170,4 @@
             
      </script>
  </body>
-</body>
 </html>

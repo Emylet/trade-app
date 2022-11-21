@@ -12,17 +12,7 @@
 //var ndsa = window.prompt("enter UserName");
 //var menuInfo =document.getElementById("menuInfo");
 //menuInfo.innerHTML= " Welcome "+ ndsa;
-var adverChange = document.getElementById("nft-advt");
-images = [
-    'advert/Ads5.png','advert/Ads2.png',  'advert/Ads1.png', 'advert/Ads4.png',
- ];
 
-
- setInterval(function() {
-    var imgCount = images.length 
-    var numb = Math.floor(Math.random()* imgCount);
-    adverChange.style.backgroundImage = 'url('+images[numb]+')'
-}, 3000);
 
 
 function dropShow() {
@@ -51,12 +41,10 @@ window.onclick = function(event) {
 
 function darkShow() {
     document.getElementById("body-bg").style.backgroundColor='black'; 
-    document.getElementById("body-bg").style.color= 'white';
     document.querySelector(".main").style.color= 'white';  
 }
 function lightShow(){
     document.getElementById("body-bg").style.backgroundColor='white';
-    document.getElementById("body-bg").style.color= 'black';
     document.querySelector(".main").style.color= 'darkblue';
 }
 
