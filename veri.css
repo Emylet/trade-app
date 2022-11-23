@@ -7,6 +7,10 @@
 h4{
     text-align: center;
     margin-bottom: 25px;
+<<<<<<< HEAD
+=======
+    color: darkblue;
+>>>>>>> 33739b4fbd9bf509712a6812bd41053413c8d604
 }
 body{
     display: flex;
@@ -113,11 +117,90 @@ form input[type="radio"]{
     color: whitesmoke;
     background: darkblue;
 }
+<<<<<<< HEAD
+=======
+#popUp{
+    text-align: center;
+    margin: 3px;
+    padding: 6px;
+    width: 100%;
+    background: linear-gradient(135deg,#1f6b7c,#5f127e);
+}
+h2{
+    font-size: 15px;
+    color: whitesmoke;
+}
+.p-letter{
+    padding-top: 5px;
+    font-size: 11px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+#btn-c{
+    float: right;
+    height: 20px;
+    padding-bottom: 2px;
+}
+#btn-v{
+    width: 90px;
+    background: whitesmoke;
+    color: darkblue;
+    border: 2px solid darkblue;
+    border-radius: 6px;
+    font-family: times;
+    font-weight: bold;
+}
+ a #btn-v{
+    color: darkblue;
+    font-size: 12px;
+}
+#btn-v :hover{
+    background: darkblue;
+}
+ a #btn-v:hover{
+    color: whitesmoke;
+    background: darkblue;
+}
+#vld-wall{
+    text-align: center;
+    margin: 9px;
+    display: flex;
+    padding-top: 10px;
+}
+h4 a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+}
+h4 a:hover{
+    color: blue;
+}
+h4{
+    margin: 5px;
+    font-size: 16px;
+    color: darkblue;
+    padding-bottom: 5px;
+}
+.sb{
+    color: rgb(253, 181, 181);
+    font-size: 10px;
+}
+#infs{
+    text-align: center;
+    padding-top: 15px;
+    color: darkred;
+}
+>>>>>>> 33739b4fbd9bf509712a6812bd41053413c8d604
 @media (max-width:500px){
     h4{
     text-align: center;
     margin-bottom: 25px;
     font-size: 15px;
+<<<<<<< HEAD
+=======
+    color: darkblue;
+>>>>>>> 33739b4fbd9bf509712a6812bd41053413c8d604
 }
 body{
     display: flex;
@@ -228,4 +311,72 @@ form input[type="radio"]{
 #regist:hover{
     color: whitesmoke;
     background: darkblue;
+<<<<<<< HEAD
+=======
+}
+
+#popUp{
+    text-align: center;
+    margin: 3px;
+    padding: 6px;
+    width: 100%;
+    background: linear-gradient(135deg,#1f6b7c,#5f127e);
+}
+h2{
+    font-size: 15px;
+    color: whitesmoke;
+}
+.p-letter{
+    padding-top: 5px;
+    font-size: 11px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+#btn-c{
+    float: right;
+    height: 20px;
+    padding-bottom: 2px;
+}
+#btn-v{
+    width: 90px;
+    background: whitesmoke;
+    color: darkblue;
+    border: 2px solid darkblue;
+    border-radius: 6px;
+    font-family: times;
+    font-weight: bold;
+}
+ a #btn-v{
+    color: darkblue;
+    font-size: 12px;
+}
+#btn-v :hover{
+    background: darkblue;
+}
+ a #btn-v:hover{
+    color: whitesmoke;
+    background: darkblue;
+}
+#vld-wall{
+    text-align: center;
+    margin: 9px;
+    display: flex;
+    padding-top: 10px;
+}
+h4 a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+h4 a:hover{
+    color: blue;
+}
+h4{
+    margin: 5px;
+    font-size: 12px;
+    color: whitesmoke;
+}
+.sb{
+    color: rgb(253, 181, 181);
+    font-size: 10px;
+>>>>>>> 33739b4fbd9bf509712a6812bd41053413c8d604
 }

@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="veri.css">
 </head>
 <body>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 33739b4fbd9bf509712a6812bd41053413c8d604
     <div class="container">
         <div class="title">
             <h4>ACCOUNT VERIFICATION</h4>
@@ -16,6 +20,7 @@
             <div class="user-details"> 
                 <div class="input-box"> 
                     <span class="details">First Name</span>
+<<<<<<< HEAD
                     <input type="text" placeholder="Enter your firstname" required>
                 </div>
                 <div class="input-box"> 
@@ -33,11 +38,34 @@
                 <div class="input-box"> 
                     <span class="details">Phone Number</span>
                     <input type="text" placeholder="Enter your number" required>
+=======
+                    <input id="fstNm" type="text" placeholder="Enter your firstname" required>
+                </div>
+                <div class="input-box"> 
+                    <span class="details">Last Name</span>
+                    <input id="fstNm" type="text" placeholder="Enter your lastname" required>
+                </div>
+                <div class="input-box"> 
+                    <span class="details">Email</span>
+                    <input id="mail" type="text" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box"> 
+                    <span class="details">Password</span>
+                    <input id="pwd" type="text" placeholder="Enter your password" required>
+                </div>
+                <div class="input-box"> 
+                    <span class="details">Phone Number</span>
+                    <input id="phone" type="text" placeholder="Enter your number" required>
+>>>>>>> 33739b4fbd9bf509712a6812bd41053413c8d604
                 </div>
                 
                 <div class="input-box"> 
                     <span class="details">Confirm Password</span>
+<<<<<<< HEAD
                     <input type="text" placeholder="Confirm password" required>
+=======
+                    <input id="cnpwd" type="text" placeholder="Confirm password" required>
+>>>>>>> 33739b4fbd9bf509712a6812bd41053413c8d604
                 </div>
             </div>
             <div class="gender-details">
@@ -59,10 +87,39 @@
                         <span class="gender">Others</span>
                     </label>
                 </div>
+<<<<<<< HEAD
             </div>
             <div class="button">
                 <input id="regist" type="submit" value="VERIFY">
             </div>
         </form>
+=======
+            </div>
+            <div class="button">
+                <button id="regist" onclick="verIn()">VERIFY</button>
+            </div>
+
+            <p id="infs"></p>
+        </form>
+        <script>
+           
+           var infs = document.getElementById("infs");
+           const fstNm = document.querySelector("#fstNm");
+           const mail = document.querySelector("#mail");
+           const phone = document.querySelector("#phone");
+           const pwd = document.querySelector("#pwd");
+           const cnpwd = document.querySelector("#cnpwd");
+
+            function verIn(){
+           
+                if (fstNm.value === "" || mail.value === "" || phone.value === "" || pwd.value ==="" || cnpwd.value ===""){
+                    infs.innerHTML = "Fill in all the requred inputs"
+                }
+                    else{
+                window.location.href="valid.html"
+            };
+        };
+    </script>
+>>>>>>> 33739b4fbd9bf509712a6812bd41053413c8d604
 </body>
 </html>
