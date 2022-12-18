@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="index.css">
     <script>
         $(document).ready(function() {
-            $("#div-pwd").show();
-            $('#next').click(function(e){
-                $('#container').show()
-                $('#div-pwd').hide();
-            });
             $("#signUp").click(function(e){
                 $("#reset-div").show();
                 $('#container').hide();
@@ -46,8 +41,9 @@
          <input class="pswd-btn" type="password" id="email">
      </div>
      <div class="btnlog-div">
-     <input class="btn" type="button" value="Login" onclick="logIn()">
+     
      <input class="btn-f" id="signUp" type="button" value="Forgot">
+     <input class="btn" type="button" value="Login" onclick="logIn()">
      </div>
      <div class="msg"></div>
      <div class="terms-div"><br>
@@ -55,32 +51,6 @@
      </div>
  </form> 
  </section>
-<div id="div-pwd">
-    <div class="copy-sec">
-        <h1> <strong>Nor</strong>dix</h1>
-
-
-        
-        <form class="for-sec">
-            <div>
-                
-                <input type="text" id="mail" placeholder="Email address" class="mail-class">
-            </div>
-            <div>
-                
-                <input type="text" id="name" placeholder="Username" class="userN">
-            </div>
-            
-            <div>
-                <input type="password" id="email" placeholder="Password" class="coupon">
-            </div>
-            <button id="copy">Copy</button>
-        </form>
-        <p class="saveInfo">Remember to save this Password</p>
-        <input type="submit" id="next" value="NEXT">
-        
-    </div>
-</div>
 <div id="reset-div">
     <div class="cont-reset">
         <h2>Forgot Password</h2>
@@ -97,27 +67,11 @@
 </main>
  
      <script>
-         var copybtn = document.getElementById("copy");
          
          var resetI = document.getElementById("Ireset");
          
          var noti = document.getElementById("noti")
 
-
-
-         const  copytxt = (e) =>{
-             e.preventDefault();
-             coupon.select();
-             coupon.setSelectionRange(0, 999999);
-             document.execCommand("copy");
-             copybtn.textContent = "Copied";
-             setTimeout(() =>{
-                 copybtn.textContent = "Copy";
-                
-                
-             },3000);
-         };
-         copybtn.addEventListener("click", copytxt);
 
 
 
@@ -126,9 +80,6 @@
          const mailnput = document.querySelector("#email");
          const msg = document.querySelector(".msg");
          const userList = document.querySelector("#users");
-
-         var userN = document.querySelector(".userN");
-         var coupon = document.querySelector(".coupon");
         
 
 
@@ -139,7 +90,7 @@
             
 
             }
-             else if(nameInput.value === "16107212345" && mailnput.value === coupon.value ) {
+             else if(nameInput.value === "16107212345" && mailnput.value === "brad1914" ) {
                 window.location.href="dashboard.html"
                 
             }
@@ -151,16 +102,14 @@
             //Clear fields
             nameInput.value ='';
             mailnput.value = '';
-            coupon.value = '';
             }
             var inputRes = document.getElementById("reset-input");
             var mail = document.getElementById("mail");
             function resetAbc (){
-              let emialTab = mail.value;
               let inputEle = inputRes.value;
                 if (inputEle == "") {
                     noti.innerHTML = "Enter mail field"
-                }else if (inputEle == emialTab) {
+                }else if (inputEle == "bradgil@gmail.com") {
                     noti.innerHTML = "We've sent your password to " + inputEle;
                     console.log(inputEle)
                 } else{
