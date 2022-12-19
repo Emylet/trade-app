@@ -569,7 +569,7 @@ a .fas, .fab{
         height: 19px;
         border-radius: 0;
     }
-    
+}
     @media (max-width:406px){
     
         .user-div{
@@ -586,6 +586,7 @@ a .fas, .fab{
             padding-top: 10px;
             font-size: 7px;
         }
+    }
 
 @media (max-width:405px){
     
@@ -603,6 +604,7 @@ a .fas, .fab{
         padding-top: 10px;
         font-size: 7px;
     }
+}
 
     @media (max-width:390px){
         .user-div{
@@ -656,8 +658,8 @@ a .fas, .fab{
             padding-top: 10px;
             font-size: 8px;
         }
+    
     }
-  
     @media (max-width:358px){
         .coin-name{
             float: right;
@@ -712,4 +714,4 @@ a .fas, .fab{
             padding-top: 10px;
             font-size: 6px;
         }
-    }
+    };

